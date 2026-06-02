@@ -9,43 +9,63 @@
   },
   "selectors": {
     "title": ".title",
-    "product": ".product-frame",
+    "symbol": ".center-symbol",
     "proof": ".proof",
     "cta": ".cta-lockup"
   },
   "beats": [
     {
-      "label": "hook-title-in",
+      "label": "metaphor-rim-light-reveal",
       "at": 0.2,
+      "selector": ".center-symbol",
+      "method": "from",
+      "properties": {
+        "opacity": 0,
+        "filter": "blur(18px)",
+        "scale": 0.985,
+        "duration": 1.2,
+        "ease": "sine.inOut"
+      },
+      "purpose": "Reveal the central metaphor with cinematic restraint."
+    },
+    {
+      "label": "title-lockup",
+      "at": 1.4,
       "selector": ".title",
       "method": "from",
       "properties": {
         "opacity": 0,
-        "y": 64,
-        "duration": 0.8,
+        "clipPath": "inset(0 100% 0 0)",
+        "duration": 0.9,
         "ease": "expo.out"
       },
-      "purpose": "Land the main hook with premium restraint."
+      "purpose": "Let the amplified keyword land after the symbol is understood."
     },
     {
-      "label": "hook-to-reveal-transition",
+      "label": "tension-to-proof-transition",
       "at": 2.2,
       "selector": ".scene-hook",
       "method": "to",
       "properties": {
-        "scale": 1.06,
+        "scale": 1.025,
         "opacity": 0,
-        "duration": 0.45,
-        "ease": "power3.inOut"
+        "duration": 0.8,
+        "ease": "sine.inOut"
       },
-      "purpose": "Carry momentum into product reveal without an empty fade."
+      "purpose": "Move from metaphor tension into proof without an empty fade."
     }
   ],
   "holds": [
     {
+      "selector": ".center-symbol",
+      "start": 0.9,
+      "end": 2.1,
+      "reason": "Give the viewer time to read the metaphor as a still image."
+    },
+    {
       "selector": ".title",
-      "start": 1.0,
-      "end": 2.0,
+      "start": 2.1,
+      "end": 3.0,
       "reason": "Readable title hold."
     }
   ],
@@ -55,9 +75,15 @@
       "to_scene": "reveal",
       "start": 2.2,
       "end": 2.7,
-      "mechanism": "scale-through / mask wipe / directed cut",
+      "mechanism": "rim-light dissolve / mask wipe / directed cut",
       "risk": "Do not transition through an empty black frame."
     }
+  ],
+  "style_constraints": [
+    "Deep black #050505 background.",
+    "White, gray, and restrained warm gold only.",
+    "No neon cyberpunk, multicolor gradients, icon piles, ecommerce banner layout, or generic tech clutter.",
+    "Motion must reveal the metaphor rather than decorate the frame."
   ],
   "stability_notes": [
     "No Date.now(), unseeded Math.random(), setTimeout, setInterval, requestAnimationFrame as timeline truth, or runtime network asset fetches."

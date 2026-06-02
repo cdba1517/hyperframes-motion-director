@@ -5,11 +5,10 @@
 This repository is an agent skill for directing HyperFrames video advertising work.
 
 - `SKILL.md` contains the primary agent instructions and quality gates.
-- `templates/` holds production artifact templates such as `CREATIVE_BRIEF.template.md`, `STORYBOARD.template.md`, and `MOTION_MAP.template.json`.
-- `references/` contains supporting guidance for workflow, typography, motion, audio sync, review loops, and render stability.
+- `templates/` holds production artifact templates such as `BRIEF_DESIGN_PROPOSAL.template.md`, `DESIGN.template.md`, `STORYBOARD.template.md`, `REVIEW_REPORT.template.md`, and optional `BEAT_MAP` / `MOTION_MAP` templates.
+- `references/` contains supporting guidance for workflow, the unified visual standard, audio sync, and render stability.
 - `scripts/` contains Node.js helpers for scaffolding projects and validating skill structure or production artifacts.
 - `evals/` stores trigger prompts and evaluation cases.
-- `assets/` stores compressed README images only; rendered video outputs belong in generated project folders, not here.
 
 ## Build, Test, and Development Commands
 
@@ -25,20 +24,22 @@ Verifies the skill has all required files and key `SKILL.md` terms.
 node scripts/create_project.mjs ./my-product-ad
 ```
 
-Creates a HyperFrames ad production scaffold with templates, asset folders, review folders, and placeholders.
+Creates a HyperFrames ad production scaffold with the four core artifacts, asset folders, review folders, and placeholders. Use `--with-timing` for `BEAT_MAP.json` and `--with-motion` for `MOTION_MAP.json`.
 
 ```bash
 node scripts/check_assets.mjs <project-dir>
 node scripts/score_artifacts.mjs <project-dir>
 ```
 
-Checks a generated project for asset readiness and artifact completeness.
+Checks a generated project for asset readiness and the slim four-artifact production chain.
 
 For implemented HyperFrames compositions, also run the strongest available local CLI checks, for example `npx hyperframes validate` and `npx hyperframes snapshot <composition> --at <times>`.
 
+Rendered video outputs and generated project assets belong in generated project folders, not in this skill repository.
+
 ## Coding Style & Naming Conventions
 
-Scripts use modern JavaScript modules (`import` syntax) and `.mjs` filenames. Keep helper scripts dependency-light and deterministic. Use two-space indentation in Markdown lists and JSON templates where practical. Template outputs should use uppercase artifact names such as `CREATIVE_BRIEF.md` and `REVIEW_REPORT.md`; template files should keep the `.template.md` or `.template.json` suffix.
+Scripts use modern JavaScript modules (`import` syntax) and `.mjs` filenames. Keep helper scripts dependency-light and deterministic. Use two-space indentation in Markdown lists and JSON templates where practical. Template outputs should use uppercase artifact names such as `BRIEF_DESIGN_PROPOSAL.md` and `REVIEW_REPORT.md`; template files should keep the `.template.md` or `.template.json` suffix.
 
 ## Testing Guidelines
 
@@ -50,4 +51,4 @@ The current history uses Conventional Commit style, for example `docs: initializ
 
 ## Agent-Specific Instructions
 
-Do not start animation code before reading `SKILL.md` and the relevant files in `references/`. For video work, preserve the artifact chain: brief, design, script, storyboard, beat map, motion map, validation, snapshots, render, and review report.
+Do not start animation code before reading `SKILL.md` and the relevant files in `references/`. For new video work, preserve the two-phase gate: `BRIEF_DESIGN_PROPOSAL.md` first, user confirmation second, then production through `DESIGN.md`, `STORYBOARD.md`, optional generated images, validation, snapshots, render, and `REVIEW_REPORT.md`. `BEAT_MAP.json` and `MOTION_MAP.json` are optional only when timing or choreography complexity justifies them.

@@ -15,9 +15,8 @@ function listFiles(dir) {
 }
 
 const artifacts = [
-  "CREATIVE_BRIEF.md",
+  "BRIEF_DESIGN_PROPOSAL.md",
   "DESIGN.md",
-  "SCRIPT.md",
   "STORYBOARD.md",
   "BEAT_MAP.json",
   "MOTION_MAP.json",

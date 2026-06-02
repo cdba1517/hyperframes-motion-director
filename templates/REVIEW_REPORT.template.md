@@ -19,9 +19,9 @@
 
 ## Snapshot Notes
 
-| Timestamp | Purpose | Result |
-| --- | --- | --- |
-|  |  |  |
+| Timestamp | Purpose | Result | Metaphor / Style Verdict |
+| --- | --- | --- | --- |
+|  |  |  |  |
 
 ## Watch Notes
 
@@ -43,6 +43,14 @@
 | Technical stability / 10 |  |  |
 | Editability / 3 |  |  |
 | Delivery readiness / 2 |  |  |
+
+## Style Gate
+- Essence metaphor is clear:
+- Surface-topic illustration avoided:
+- Black / white / gray / warm gold only:
+- One dominant symbol or title per frame:
+- No ecommerce banner, icon pile, neon tech, multicolor palette, or busy collage:
+- Generated images saved locally and composed in HyperFrames:
 
 ## Issues
 1. 

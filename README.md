@@ -4,8 +4,6 @@
 
 **面向 HyperFrames 视频广告的 AI 制片导演工作流**
 
-<img src="assets/banner.jpg" alt="Video Ad Director 信息图：创意简报、分镜、运动图、审查包和 HyperFrames 平台标签" width="100%">
-
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](./LICENSE)
 [![Skill](https://img.shields.io/badge/Agent%20Skill-HyperFrames-c96442.svg)](./SKILL.md)
 [![Node.js](https://img.shields.io/badge/Node.js-18%2B-141413.svg)](https://nodejs.org/)
@@ -16,30 +14,35 @@
 
 ## 这是什么
 
-Video Ad Director 是一个用于制作 HyperFrames 视频广告的 agent skill。它把模糊的视频广告需求，转成可审查、可验证、可交付的生产链路：创意简报、设计系统、脚本、分镜、节拍图、运动图、验证、快照、渲染和审查报告。
+Video Ad Director 是一个用于制作 HyperFrames 宣传片和视频广告的 agent skill。它把文章、主题、产品或落地页需求，先转成可确认的 brief/design 方案；用户确认后，才进入图片生成、HyperFrames 制作、验证、快照、渲染和审查报告。
 
 ```text
-输入："给 AI 编程助手 Forge 做一个高级感产品发布广告，使用动效大字和 CTA"
-输出：一套 HyperFrames 视频广告生产工作流，包括制片文档、分镜、运动编排、验证门和审查交付
+输入："把这篇关于 AI 替代焦虑的文章做成 12 秒宣传片，不要画机器人办公室，要画本质隐喻"
+输出：先给一份可确认的黑底极简电影风 brief/design 方案；确认后再生成设计规范、分镜、必要图片、HyperFrames composition 和审查报告
 ```
 
 它适用于短视频广告、产品发布片、官网转视频、YouTube 宣传片、字幕驱动产品视频、动效字体广告和音乐节拍同步的 motion graphics。
+
+默认风格是严格的黑底电影隐喻风：`#050505` 极深黑背景，白/灰/暖金三色，高对比，大留白，电影打光，纸张颗粒，浅景深，体积雾，细窄轮廓光，局部金属质感。它不做普通插画、电商 Banner、图标堆、廉价科技感、多色渐变或解释性信息图。
 
 ---
 
 ## 核心能力
 
-<img src="assets/features.jpg" alt="核心能力：简报、设计、脚本、分镜、运动和审查" width="100%">
+这个 skill 强调先确认方向，再制作视频；先做静态关键帧，再做动画；先验证排版、安全边界、时间线和渲染稳定性，再交付成片。
 
-这个 skill 强调先做静态关键帧，再做动画；先建立生产文档，再写代码；先验证可读性、时间线和渲染稳定性，再交付成片。
+核心能力：
+
+- 提炼文章或主题的核心观点、最大冲突、情绪重心、关键词和视觉隐喻。
+- 将抽象观点转译为克制符号，例如被擦除的人影、即将断裂的细线、黑暗倒计时、裂缝里的微光、被吸入黑洞的数据碎片。
+- 自动选择中心符号、超大标题、人物锚点或巨大数字作为主结构。
+- 判断是否需要生成图片；需要时先生成视觉素材，再用 HyperFrames 负责字体、构图、动效、节奏和最终渲染。
 
 ---
 
 ## 工作流程
 
-<img src="assets/workflow.jpg" alt="工作流程：需求采集、简报、构建、验证和渲染" width="100%">
-
-工作方式是从最终观看体验倒推：观众要记住什么，哪个画面证明方向成立，哪个节拍承载 hook、揭示、证明和 CTA，哪些验证能证明渲染是确定性的。
+工作方式是从最终观看体验倒推：观众要记住什么，文章的本质隐喻是什么，视频尺寸和文字布局是否成立，哪些图片需要生成，哪些元素必须留给 HyperFrames 排版和动画，哪些验证能证明画面不溢出、不跑版、可确定渲染。
 
 ---
 
@@ -97,13 +100,13 @@ node scripts/create_project.mjs ./my-product-ad
 然后按顺序填写生成的文档：
 
 ```text
-CREATIVE_BRIEF.md
+BRIEF_DESIGN_PROPOSAL.md
 DESIGN.md
-SCRIPT.md
 STORYBOARD.md
-BEAT_MAP.json
-MOTION_MAP.json
+REVIEW_REPORT.md
 ```
+
+`BEAT_MAP.json` 和 `MOTION_MAP.json` 只在音乐/旁白/复杂 GSAP 时间线需要时生成。
 
 发布 skill 或检查项目结构时运行：
 
@@ -128,15 +131,14 @@ npx hyperframes snapshot <composition> --at <times>
 ## 仓库结构
 
 ```text
-SKILL.md                         skill 主指令和质量门
-templates/                       创意简报、设计、脚本、分镜、节拍图、运动图等模板
-references/                      工作流、字体排版、运动语言、音频同步、稳定性和审查指南
+SKILL.md                         skill 主指令、确认门和质量门
+templates/                       确认方案、设计、分镜、审查报告和可选节拍/运动图模板
+references/                      工作流、统一视觉标准、音频同步和稳定性指南
 scripts/create_project.mjs       新建视频广告项目脚手架
 scripts/check-structure.mjs      skill 发布前结构检查
 scripts/check_assets.mjs         项目资源检查
-scripts/score_artifacts.mjs      生产文档完整度评分
+scripts/score_artifacts.mjs      本质隐喻、风格门和生产文档评分
 evals/                           触发词和评测用例
-assets/                          README 使用的压缩信息图
 ```
 
 ---

@@ -7,9 +7,8 @@ const targetArg = process.argv[2] || ".";
 const root = resolve(process.cwd(), targetArg);
 
 const textFiles = [
-  "CREATIVE_BRIEF.md",
+  "BRIEF_DESIGN_PROPOSAL.md",
   "DESIGN.md",
-  "SCRIPT.md",
   "STORYBOARD.md",
   "BEAT_MAP.json",
   "MOTION_MAP.json",

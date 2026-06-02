@@ -9,11 +9,13 @@ const skillRoot = resolve(scriptDir, "..");
 
 const targetArg = process.argv[2];
 if (!targetArg) {
-  console.error("Usage: node scripts/create_project.mjs <target-dir> [--force]");
+  console.error("Usage: node scripts/create_project.mjs <target-dir> [--force] [--with-timing] [--with-motion]");
   process.exit(1);
 }
 
 const force = process.argv.includes("--force");
+const withTiming = process.argv.includes("--with-timing");
+const withMotion = process.argv.includes("--with-motion");
 const target = resolve(process.cwd(), targetArg);
 
 const dirs = [
@@ -31,14 +33,14 @@ mkdirSync(target, { recursive: true });
 for (const dir of dirs) mkdirSync(join(target, dir), { recursive: true });
 
 const templateMap = {
-  "CREATIVE_BRIEF.template.md": "CREATIVE_BRIEF.md",
+  "BRIEF_DESIGN_PROPOSAL.template.md": "BRIEF_DESIGN_PROPOSAL.md",
   "DESIGN.template.md": "DESIGN.md",
-  "SCRIPT.template.md": "SCRIPT.md",
   "STORYBOARD.template.md": "STORYBOARD.md",
-  "BEAT_MAP.template.json": "BEAT_MAP.json",
-  "MOTION_MAP.template.json": "MOTION_MAP.json",
   "REVIEW_REPORT.template.md": "REVIEW_REPORT.md",
 };
+
+if (withTiming) templateMap["BEAT_MAP.template.json"] = "BEAT_MAP.json";
+if (withMotion) templateMap["MOTION_MAP.template.json"] = "MOTION_MAP.json";
 
 const templateDir = join(skillRoot, "templates");
 for (const [template, outFile] of Object.entries(templateMap)) {
@@ -56,16 +58,19 @@ This project was scaffolded by the video-ad-director skill.
 
 ## Artifact Flow
 
-1. CREATIVE_BRIEF.md
+1. BRIEF_DESIGN_PROPOSAL.md
 2. DESIGN.md
-3. SCRIPT.md
-4. STORYBOARD.md
-5. BEAT_MAP.json
-6. MOTION_MAP.json
-7. compositions/
-8. snapshots/
-9. renders/
-10. REVIEW_REPORT.md and REVIEW_PACK.md
+3. STORYBOARD.md
+4. REVIEW_REPORT.md
+5. compositions/
+6. snapshots/
+7. renders/
+8. REVIEW_PACK.md (generated after review assets exist)
+
+Optional:
+
+- BEAT_MAP.json via \`--with-timing\`
+- MOTION_MAP.json via \`--with-motion\`
 
 ## Suggested Checks
 
@@ -86,4 +91,6 @@ for (const dir of gitkeepDirs) {
 }
 
 console.log(`Created HyperFrames ad production scaffold at ${target}`);
-console.log("Next: fill CREATIVE_BRIEF.md, DESIGN.md, SCRIPT.md, STORYBOARD.md, BEAT_MAP.json, and MOTION_MAP.json before implementing composition source.");
+console.log("Next: fill BRIEF_DESIGN_PROPOSAL.md and get confirmation before generating images or implementing composition source.");
+if (!withTiming) console.log("Optional: rerun with --with-timing if music, voiceover, or exact beat hits matter.");
+if (!withMotion) console.log("Optional: rerun with --with-motion if GSAP choreography needs a separate motion map.");

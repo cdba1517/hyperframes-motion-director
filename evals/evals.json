@@ -3,12 +3,16 @@
   "evals": [
     {
       "id": 1,
-      "prompt": "Use HyperFrames to make a 10 second Apple keynote style product launch ad for an AI coding assistant called Forge. Black background, huge restrained typography, one product screenshot placeholder, music-synced hits, and a final CTA. I care more about it looking premium than having lots of effects.",
-      "expected_output": "A complete HyperFrames ad production plan or project output with creative brief, design system, script, storyboard, deterministic GSAP guidance, validation plan, snapshots plan, and review report. The output should emphasize layout before animation and premium restraint.",
+      "prompt": "Turn this article theme into a 12 second HyperFrames promo: 'AI is not replacing workers all at once; it is quietly erasing the parts of their work that made them visible.' Use the strict black cinematic metaphor style. Do not make a literal robot office scene.",
+      "expected_output": "A complete HyperFrames ad production plan or project output that first extracts the core viewpoint, conflict, emotion, amplified keyword, and visual metaphor, then builds a black-background cinematic promo with sparse typography, generated-image planning, storyboard, motion map, validation plan, snapshots, and review report.",
       "files": [],
       "assertions": [
-        "Output includes a creative brief or equivalent intake artifact.",
+        "Output includes a BRIEF_DESIGN_PROPOSAL or equivalent approval artifact.",
+        "Output extracts core viewpoint, largest conflict, emotional center, amplified keyword, and visual metaphor.",
+        "Output avoids literal surface illustration and proposes a restrained metaphor such as an erased silhouette or vanishing trace.",
         "Output includes a design system with typography, color, layout, and motion direction.",
+        "Output locks the black-background cinematic style with white/gray/warm gold palette and minimal composition.",
+        "Output includes generated image or visual asset planning when bitmap key visuals are useful.",
         "Output includes a beat-by-beat storyboard with timing and hero frame timestamps.",
         "Output explicitly uses layout before animation or static hero frame review before GSAP.",
         "Output includes HyperFrames validation/snapshot/render checks.",
@@ -17,12 +21,13 @@
     },
     {
       "id": 2,
-      "prompt": "Turn this SaaS homepage idea into a 15 second YouTube promo: 'Atlas turns messy support tickets into clean product insights.' Make it feel sharp and technical, with kinetic typography, a proof beat, and a CTA. Use HyperFrames and GSAP.",
-      "expected_output": "A structured production workflow for a 15 second HyperFrames promo with concise copy, beat-by-beat storyboard, technical visual language, motion vocabulary, transition plan, and validation checklist.",
+      "prompt": "Turn this SaaS homepage idea into a 15 second YouTube promo: 'Atlas turns messy support tickets into clean product insights.' Make it cinematic and metaphor-led, not a dashboard montage. Use HyperFrames and GSAP.",
+      "expected_output": "A structured production workflow for a 15 second HyperFrames promo with essence extraction, concise copy, beat-by-beat storyboard, strict cinematic visual language, motion vocabulary, transition plan, generated asset plan, and validation checklist.",
       "files": [],
       "assertions": [
         "Output includes a concise ad structure with hook, reveal, proof, and CTA.",
-        "Output includes a technical visual direction rather than generic visual adjectives.",
+        "Output includes a metaphor-led visual direction rather than generic technical dashboard imagery.",
+        "Output forbids noisy icon piles, ecommerce banner composition, neon tech clutter, or multicolor palettes.",
         "Output includes beat timing for a 15 second video.",
         "Output includes GSAP motion choreography with explicit timing or easing guidance.",
         "Output includes a transition plan.",
@@ -45,12 +50,12 @@
     },
     {
       "id": 4,
-      "prompt": "Start an actual HyperFrames ad project scaffold in ./forge-launch for a 10 second premium kinetic typography launch film. I do not need a finished render yet, but I want the real production files, artifact templates, folders for assets/compositions/snapshots/renders, beat map, motion map, and a review pack plan.",
-      "expected_output": "A real project scaffold with production artifacts and folders, not just prose. It should include CREATIVE_BRIEF.md, DESIGN.md, SCRIPT.md, STORYBOARD.md, BEAT_MAP.json, MOTION_MAP.json, REVIEW_REPORT.md, asset/composition/snapshot/render folders, and instructions for next validation steps.",
+      "prompt": "Start an actual HyperFrames ad project scaffold in ./forge-launch for a 10 second black-background cinematic metaphor launch film. I do not need a finished render yet, but I want the real production files, artifact templates, folders for generated images/assets/compositions/snapshots/renders, beat map, motion map, and a review pack plan.",
+      "expected_output": "A real project scaffold with production artifacts and folders, not just prose. It should include BRIEF_DESIGN_PROPOSAL.md, DESIGN.md, STORYBOARD.md, REVIEW_REPORT.md, asset/composition/snapshot/render folders, and instructions for next validation steps. BEAT_MAP.json and MOTION_MAP.json should be optional rather than default.",
       "files": [],
       "assertions": [
         "Output creates or instructs creation of a real project scaffold rather than only a written plan.",
-        "Output includes BEAT_MAP.json and MOTION_MAP.json.",
+        "Output treats BEAT_MAP.json and MOTION_MAP.json as optional files for exact timing or complex GSAP choreography.",
         "Output includes assets, compositions, snapshots, renders, and review folders.",
         "Output includes review pack or review handoff plan.",
         "Output includes local deterministic checks such as asset check or artifact score.",
