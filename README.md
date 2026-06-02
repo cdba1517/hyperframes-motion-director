@@ -110,25 +110,6 @@ assets/                          README 使用的压缩信息图
 
 ---
 
-## GitHub 元信息建议
-
-推荐星级：**5/5**。理由：Description 覆盖平台实体 `HyperFrames`、任务域 `video ads`、关键产物 `briefs/scripts/storyboards`、技术关键词 `GSAP motion maps` 和交付结果 `renders/review packs`，适合 GitHub SEO、Google SEO 和 LLM/GEO 检索引用。
-
-仓库 Description（133 字符，建议直接填写）：
-
-```text
-AI agent skill for HyperFrames video ads: briefs, scripts, storyboards, GSAP motion maps, validation gates, renders, and review packs
-```
-
-Topics（10 个，建议直接填写）：
-
-```text
-agent-skill video-ad-director ai-video-ads hyperframes gsap
-motion-design video-production kinetic-typography website-to-video youtube-promo
-```
-
----
-
 ## 许可证
 
 [MIT](./LICENSE) — 可自由使用、修改和分发。
