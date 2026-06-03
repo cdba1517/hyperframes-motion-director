@@ -68,7 +68,7 @@ npx skills add heygen-com/hyperframes
 推荐通过 `skills` CLI 安装本 skill：
 
 ```bash
-npx skills add https://github.com/geekjourneyx/video-ad-director
+npx skills add https://github.com/geekjourneyx/hyperframes-motion-director
 ```
 
 使用 skill 本身不需要额外依赖。仓库中的辅助脚本使用 Node.js。

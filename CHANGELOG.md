@@ -2,11 +2,19 @@
 
 All notable changes to this project will be documented in this file.
 
+## [2.0.0] - 2026-06-04
+
+### Changed
+
+- Renamed the internal skill slug from `video-ad-director` to `hyperframes-motion-director` to match the public `HyperFrames Motion Director` positioning.
+- Updated install guidance, eval metadata, and structure checks to enforce the new internal slug.
+- Renamed the GitHub repository target to `geekjourneyx/hyperframes-motion-director`.
+
 ## [1.2.0] - 2026-06-04
 
 ### Changed
 
-- Repositioned the public project name from `Video Ad Director` to `HyperFrames Motion Director` while keeping the internal `video-ad-director` slug for compatibility.
+- Repositioned the public project name from `Video Ad Director` to `HyperFrames Motion Director`.
 - Calibrated README, skill description, agent guidance, scaffold wording, workflow references, and evaluation prompts around HyperFrames cinematic motion-video production instead of video advertising.
 - Added structure-check guards to prevent public documentation from drifting back to the deprecated `Video Ad Director` / video-ad-only framing.
 

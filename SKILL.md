@@ -1,5 +1,5 @@
 ---
-name: video-ad-director
+name: hyperframes-motion-director
 description: "Direct and produce polished cinematic motion videos, article-to-video films, product launch films, website-to-video pieces, keynote reveals, kinetic typography sequences, and music-synced motion graphics using HyperFrames. Use this skill whenever the user wants a high-quality HyperFrames motion video, especially requests involving HTML/CSS/GSAP video, big animated typography, article/theme-to-video work, product reveals, launch films, music beat sync, transitions, short-form cinematic videos, or turning a landing page/product story into a rendered video. This skill enforces a strict two-phase workflow: first a brief/design proposal for user confirmation, then a cinematic metaphor production with design spec, storyboard, optional image generation, optional timing/motion maps, validation, snapshots, review report, and deterministic renders."
 ---
 

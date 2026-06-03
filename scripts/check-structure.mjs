@@ -27,7 +27,7 @@ const requiredFiles = [
 ];
 
 const requiredSkillTerms = [
-  "name: video-ad-director",
+  "name: hyperframes-motion-director",
   "# HyperFrames Motion Director",
   "description:",
   "Layout Before Animation",
@@ -47,8 +47,8 @@ const positioningChecks = [
   },
   {
     file: "SKILL.md",
-    required: ["# HyperFrames Motion Director", "HyperFrames motion video"],
-    forbidden: ["# Video Ad Director", "AI video ad or promo", "HyperFrames advertising work"],
+    required: ["name: hyperframes-motion-director", "# HyperFrames Motion Director", "HyperFrames motion video"],
+    forbidden: ["name: video-ad-director", "# Video Ad Director", "AI video ad or promo", "HyperFrames advertising work"],
   },
   {
     file: "AGENTS.md",
@@ -126,4 +126,4 @@ if (missing.length > 0 || missingTerms.length > 0 || frontmatterErrors.length > 
   process.exit(1);
 }
 
-console.log("video-ad-director structure check passed.");
+console.log("hyperframes-motion-director structure check passed.");
