@@ -4,9 +4,9 @@ Use this reference whenever text sits on, beside, or near a generated background
 
 ## Intent First
 
-Do not generate or place an image before choosing the layout intent. The intent defines the relationship between message, subject, background, movement, and transition. From that relationship, derive image ratio, subject position, quiet text zone, type scale, crop behavior, motion boundaries, and transition logic.
+Choose the layout intent before generating or placing an image. The intent defines the relationship between message, subject, background, movement, and transition. From that relationship, derive image ratio, subject position, quiet text zone, type scale, crop behavior, motion boundaries, and transition logic.
 
-Before choosing a lower-safe layout, map attention. In vertical video, the strongest first-read zone is center to slightly above center. Use this zone for hooks, sharp viewpoints, emotional keywords, and big typographic moments unless the visual subject must own it. Lower-middle copy is a fallback, not a default: use it for CTA holds, proof notes, or when the image subject already dominates the center.
+Before choosing a lower-safe layout, map attention. In vertical video, the strongest first-read zone is center to slightly above center. Use this zone for hooks, sharp viewpoints, emotional keywords, and big typographic moments when the visual subject leaves it free. Lower-middle copy works for CTA holds, proof notes, or subject-dominant frames.
 
 Every text-over-background beat must declare one compact layout contract:
 
@@ -17,7 +17,7 @@ Layout contract: cinematic side-title stage / 9:16 / left axis / textRect x=8% y
 The contract must include:
 
 - Layout intent: the visual relationship between background, subject, text, and transition.
-- Image ratio: final intended image ratio, not the source image ratio.
+- Image ratio: final intended image ratio; avoid copying the source ratio by habit.
 - Text axis: left / right / center / top / bottom-safe / split.
 - `textRect`: the allowed title/support/CTA region in percent or pixels.
 - `subjectRect`: the required subject region after crop in percent or pixels.
@@ -35,9 +35,9 @@ The contract is not paperwork. It is the geometry of the frame. If it cannot be 
 
 ## Layout Intent Patterns
 
-Choose the simplest intent that matches the message. These are patterns, not a numbered template system. If the story needs another relationship, describe it in the same contract geometry.
+Choose the simplest intent that matches the message. These patterns are starting points. If the story needs another relationship, describe it in the same contract geometry.
 
-Default cinematic vertical films should start from a full-bleed stage, a center-symbol hold, or pure kinetic type. Use product panels, proof cutaways, and multi-evidence structures only when the beat is explicitly a product demo, proof/evidence moment, UI explanation, or before/after comparison. Do not make the whole film feel like static pages.
+Default cinematic vertical films should start from a full-bleed stage, a center-symbol hold, or pure kinetic type. Use product panels, proof cutaways, and multi-evidence structures only for product demos, proof/evidence moments, UI explanation, or before/after comparison. Keep the film from feeling like static pages.
 
 ### Cinematic Side-Title Stage
 
@@ -56,7 +56,7 @@ Default cinematic vertical films should start from a full-bleed stage, a center-
 - Text axis: lower-middle, but above the bottom platform overlay.
 - Quiet zone: dark lower third with local contrast treatment.
 - Avoid: CTA below the safe bottom boundary.
-- Caution: if the text is the hook or emotional center, do not automatically push it below the symbol. Either let the text dominate the center and move the symbol behind/around it, or choose a side-title / kinetic-type layout.
+- Caution: when text is the hook or emotional center, let it dominate the center and move the symbol behind/around it, or choose a side-title / kinetic-type layout.
 
 ### Center Impact Type
 
@@ -75,7 +75,7 @@ Default cinematic vertical films should start from a full-bleed stage, a center-
 - Text axis: left-aligned bottom statement block.
 - Quiet zone: paper/black field below image; no text over busy image.
 - Avoid: putting the title inside the image cutaway unless the image was generated with a quiet zone.
-- Exception pattern: use sparingly in cinematic films; this is an explainer/proof relationship, not the default emotional hero relationship.
+- Exception pattern: use sparingly in cinematic films; this is an explainer/proof relationship.
 
 ### Split Product / Claim
 
@@ -85,26 +85,26 @@ Default cinematic vertical films should start from a full-bleed stage, a center-
 - Text axis: claim side, top-to-middle.
 - Quiet zone: claim side must be mostly solid black or low-detail texture.
 - Avoid: stretching screenshots or product images to fill the full 9:16 frame.
-- Exception pattern for product or UI beats. Do not use it for abstract metaphor scenes unless the split itself expresses the idea.
+- Exception pattern for product or UI beats. Use it for abstract metaphor scenes only when the split itself expresses the idea.
 
 ### Sequential Proof Beats
 
-- Use for multiple screenshots, proof panels, feature cards, or before/after visual evidence only when the viewer does not need to read dense text inside the images.
+- Use for multiple screenshots, proof panels, feature cards, or before/after visual evidence when the viewer can understand the images without reading dense text inside them.
 - Image ratio: unified 16:10, 3:2, or 1:1 for the whole group.
 - Text axis: title above the evidence group, proof note below each panel only if readable.
 - Quiet zone: each panel owns its proof note; no floating text between panels.
 - Avoid: mixed image ratios, mixed scale, or proof notes falling into the bottom overlay zone.
 - Mobile caution: multi-panel evidence becomes unreadable quickly. Prefer sequential proof beats when the viewer must read text inside the images.
-- Exception pattern. A multi-panel proof structure is the last resort, not the default proof structure.
+- Exception pattern. Use multi-panel proof as a last resort.
 
 ### Pure Kinetic Type
 
-- Use only when the confirmed brief explicitly does not need bitmap imagery.
+- Use only when the confirmed brief explicitly chooses pure type or code-generated visuals.
 - Image ratio: none.
 - `subjectRect` may be `none`; the type itself becomes the subject.
 - Text axis: locked to an alignment system; title, support, and CTA still need safe zones.
 - Quiet zone: code-generated texture or black field behind type.
-- Avoid: claiming this exception because image planning was skipped.
+- Avoid: using this exception to skip image planning.
 
 ## Image Ratio Rules
 
@@ -146,7 +146,7 @@ Short-video viewers read in glances. Text density must let the main idea land in
 
 - One beat carries one sentence-level idea.
 - Title: 4-14 Chinese characters is the normal range; beyond that, rewrite or split beats.
-- Support: one clarifying line, not a paragraph.
+- Support: one clarifying line.
 - Proof text: use one number or one short claim; dense evidence belongs in sequential beats, not small panels.
 - Vertical spacing between title and support: 24-48px depending on title size.
 - Vertical spacing between support and CTA/proof: 40-72px.
@@ -156,11 +156,11 @@ Short-video viewers read in glances. Text density must let the main idea land in
 ## Text Axis Rules
 
 - Left or right axis: align title, support, and CTA to the same vertical edge.
-- Center axis: use only when the image subject is not also centered, or when the text is the subject.
+- Center axis: use when the text is the subject or the image subject sits away from center.
 - Split axis: image and text occupy separate zones; do not let text float over the image edge.
 - Bottom axis: valid only when the safe bottom boundary is explicit and the title clears platform UI.
-- Axis consistency is a default, not a religion. Break it only when semantic hierarchy requires it, and document why.
-- For hooks, center axis is often the strongest choice because it owns first attention. If center axis feels weak, the problem is usually type scale, motion, contrast, or background detail, not the axis itself.
+- Axis consistency is the default. Break it only when semantic hierarchy requires it, and document why.
+- For hooks, center axis is often the strongest choice because it owns first attention. If center axis feels weak, check type scale, motion, contrast, and background detail first.
 
 Platform UI, subtitle, proof note, support line, and CTA are different semantic layers. Do not repeat the same text in two layers.
 
@@ -173,7 +173,7 @@ For 9:16 social video, the bottom overlay zone is dangerous. Default:
 - Keep important text away from the right-side control rail when targeting TikTok/Reels/Douyin style surfaces; avoid placing small text in the rightmost 12% unless the platform is explicitly clean.
 - Keep top identity labels and title text below the top 8%-10% unless the platform/surface has no top interface overlay.
 - If a beat needs bottom text, reserve a local black field and document the lowest y-boundary.
-- Do not use bottom-aligned CSS or motion paths that place text into the final 15% during entrance, hold, or exit.
+- Keep bottom-aligned CSS and motion paths above the final 15% during entrance, hold, and exit.
 
 The storyboard must include a safe bottom boundary such as `safeBottomY<=85%` or `lowest text edge <= 1632px on 1080x1920`.
 
@@ -194,10 +194,10 @@ If the image returns with text in the quiet zone, a subject on the wrong side, o
 
 ## Static Frame Gate
 
-Before motion, inspect the readable hold frame. This is a gate, not the final goal:
+Before motion, inspect the readable hold frame. This is a gate:
 
 - Confirm the first eye target is obvious within one second.
-- Confirm hook text is not unnecessarily demoted to the lower half.
+- Confirm hook text keeps a strong attention zone.
 - Snapshot the hero frame or inspect the static composition.
 - Confirm one dominant visual mass and one dominant text block.
 - Confirm `textRect`, `subjectRect`, and `safeBottomY` match the layout contract.
@@ -211,11 +211,11 @@ If the still frame fails, fix layout or image first. Motion cannot rescue a brok
 
 ## Motion And Transition Integration
 
-Text, background, motion, and transition are one composition. Do not design them independently.
+Text, background, motion, and transition are one composition.
 
 - Background motion must preserve the quiet zone during the full readable hold.
 - Text entrance must land inside `textRect` before the viewer needs to read it.
-- Text exit must not drag readable copy through the unsafe bottom or right-side control zones.
+- Text exit keeps readable copy away from unsafe bottom and right-side control zones.
 - Transitions should use the existing subject, text axis, mask, light direction, or camera move as the bridge.
 - If the next beat uses a different layout intent, define the transition midpoint: what remains stable, what moves, and when the new quiet zone becomes readable.
-- The strongest transition is often a hold plus one meaningful movement, not continuous motion everywhere.
+- The strongest transition is often a hold plus one meaningful movement.

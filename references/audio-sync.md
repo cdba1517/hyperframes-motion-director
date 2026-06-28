@@ -4,7 +4,7 @@ Use this reference when a video mentions music, beat hits, voiceover, captions, 
 
 ## Principle
 
-Major visual events should land on intentional audio or rhythm moments. Minor visual texture may react to audio, but the main story should not depend on uncontrolled audio analysis.
+Major visual events should land on intentional audio or rhythm moments. Minor visual texture may react to audio. Keep the main story independent from uncontrolled audio analysis.
 
 ## Beat Map
 
@@ -21,7 +21,7 @@ Include:
 - `snapshot_times`
 - `notes`
 
-Manual beat maps are acceptable. Do not claim waveform analysis happened unless it actually happened.
+Manual beat maps are acceptable. Claim waveform analysis only when it actually happened.
 
 ## Structural Hits
 
@@ -54,7 +54,7 @@ Caption-led videos need readability first:
 - Keep caption chunks short.
 - Avoid putting captions over busy product UI.
 - Keep caption position stable unless movement is part of the design.
-- Do not animate captions so much that they become hard to read.
+- Keep caption animation below the point where readability suffers.
 
 ## Micro-Reactivity
 
@@ -65,7 +65,7 @@ Audio-reactive motion is useful for:
 - Small scale pulse.
 - Light opacity breathing.
 
-It should not control:
+Keep it away from:
 
 - Main copy timing.
 - Scene duration.
@@ -80,4 +80,4 @@ Review in three passes:
 2. Audio pass: do major events land with the track?
 3. Frame pass: are hit frames readable rather than just flashy?
 
-If a beat lands but the frame is unreadable, timing is not actually successful.
+If a beat lands while the frame is unreadable, the timing fails.

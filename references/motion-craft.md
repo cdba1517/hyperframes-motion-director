@@ -1,10 +1,10 @@
 # Motion Craft
 
-Use this reference when a video risks feeling like a slide deck, static poster sequence, or text pasted over a background. The goal is not more motion everywhere. The goal is directed motion: movement that changes what the viewer understands, where they look, and why they keep watching.
+Use this reference when a video risks feeling like a slide deck, static poster sequence, or text pasted over a background. The goal is directed motion: movement that changes what the viewer understands, where they look, and why they keep watching.
 
 ## First Principles
 
-A motion video is not a sequence of decorated still frames. It has four moving systems:
+A motion video uses four moving systems:
 
 - Camera: where the viewer is in the space.
 - Light: what becomes important.
@@ -75,7 +75,7 @@ Weak examples:
 
 ### Kinetic Typography
 
-- Masked line reveal with `clip-path`, not only opacity.
+- Masked line reveal with `clip-path` instead of plain opacity.
 - Word-level stagger only for the keyword, not every character.
 - Split-line handoff where the outgoing word becomes the incoming word's anchor.
 - Highlight sweep on one amplified term.
@@ -96,7 +96,7 @@ Use SVG/CSS when they can carry structure more crisply than bitmap assets:
 
 ### GSAP Choreography
 
-Use GSAP as the timing engine, not as a pile of isolated effects:
+Use GSAP as the timing engine for one coordinated sequence:
 
 - Build one paused master timeline.
 - Use labels for beats: `hook`, `tension`, `reveal`, `proof`, `cta`.
@@ -175,8 +175,8 @@ Use this 100-point score when the requested result is a text/icon transition pro
 
 Interpretation:
 
-- 100: target state; ready for polished render if snapshots and readability pass.
-- 90-99: usable draft only if the report names the missing points and the next edit; do not call it perfect.
+- 100: target state; ready for final render if snapshots and readability pass.
+- 90-99: usable draft only if the report names the missing points and the next edit.
 - 70-89: promising, but revise the weakest transition or rhythm beat.
 - 60-69: rebuild the transition map before render.
-- Below 60: still PPT-like; do not call it a motion promo.
+- Below 60: still PPT-like; revise before delivery.

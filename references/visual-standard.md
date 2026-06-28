@@ -12,11 +12,11 @@ Use this as the single visual reference for proposal, layout, motion, and review
 - Background imagery: default for new videos unless a supplied-asset or pure-code exception is documented. It must function as stage, symbol, texture, anchor, or transition plate.
 - Visual objects: use a small set of project-specific props, marks, frames, stamps, brackets, rails, or texture pieces only when they compress meaning, guide attention, prove a claim, or create a memory hook.
 
-Do not use ordinary illustration, ecommerce banner layout, icon piles, generic neon tech, multicolor palettes, busy collage, decorative particles, or explanatory diagrams.
+Avoid ordinary illustration, ecommerce banner layout, icon piles, generic neon tech, multicolor palettes, busy collage, decorative particles, and explanatory diagrams.
 
 ## Metaphor First
 
-Do not draw the surface topic. Extract:
+Extract the underlying idea before choosing imagery:
 
 - Core viewpoint.
 - Largest conflict.
@@ -28,7 +28,7 @@ The metaphor must be legible without labels. If the viewer needs explanatory ico
 
 ## Visual Objects
 
-Visual objects are not decoration. They are small pieces of direction that replace words, direct the eye, or make the process believable.
+Visual objects replace words, direct the eye, or make the process believable.
 
 Use:
 
@@ -50,14 +50,14 @@ Before implementation, run the removal test: if deleting the object changes noth
 - Default output format is Simplified Chinese vertical promotional video: 9:16, `1080x1920`, with platform-safe top and bottom zones.
 - For text over or near background imagery, choose a layout contract before image generation. Use `references/text-over-background-layout.md`.
 - Use one huge title, one quiet support line, and one CTA/brand lockup.
-- Declare the first eye target for every hero frame. Hook text, emotional keywords, and central claims should usually own the center or upper-center attention zone. Do not demote important copy to the lower half unless the subject needs the center or the beat is a CTA/proof hold.
+- Declare the first eye target for every hero frame. Hook text, emotional keywords, and central claims usually own the center or upper-center attention zone. Use lower-half copy for CTA/proof holds or subject-dominant frames.
 - Default maximums: title 1-2 lines, support text 1-2 lines, CTA 1 line, one proof/stat cluster.
 - For Chinese copy, use fewer characters per beat, intentional line breaks, larger type, and stronger contrast than horizontal desktop layouts.
-- Compress user content into the smallest readable claim. A beat should carry one idea, not a paragraph from the source.
-- Use fixed font sizes per breakpoint. Do not scale font size with viewport width.
+- Compress user content into the smallest readable claim. A beat should carry one idea instead of a source paragraph.
+- Use fixed font sizes per breakpoint. Avoid viewport-width font scaling.
 - Default letter spacing is `0`; tracking is allowed only for small all-caps labels.
 - Set max width, max lines, line-height, and overflow behavior for every text block.
-- Long words, mixed Chinese/English copy, subtitles, and CTA labels must not escape their containers.
+- Long words, mixed Chinese/English copy, subtitles, and CTA labels must stay inside their containers.
 - Keep safe margins platform-specific: larger center-safe zones and stronger bottom protection for 9:16, calmer bottom spacing for 16:9.
 - Keep CTA, subtitles, proof notes, support lines, and brand lockups above the declared safe bottom boundary.
 - Keep small text away from right-side short-video controls and top platform UI unless the delivery surface is known to be clean.
@@ -69,7 +69,9 @@ Before implementation, run the removal test: if deleting the object changes noth
 - The background must match a declared layout contract with text rectangle, subject rectangle, quiet text zone, and crop-safe subject zone.
 - Reserve a quiet text zone in the image crop. Type should not sit on high-frequency texture, bright edges, faces, product seams, or accidental tangents.
 - Use vignette, mask, blur, shadow plate, darkening, or desaturation locally behind text before considering a card.
-- Generated images must not include baked-in text, fake UI, fake logos, labels, explanatory icons, watermarks, or random decoration unless specifically required.
+- Generated images should avoid baked-in text, fake UI, fake logos, labels, explanatory icons, watermarks, and random decoration unless specifically required.
+- Each Codex Image Gen asset needs one declared role, target scene, standard ratio, focal subject position, quiet text zone, crop-safe region, and accepted local path.
+- Inspect generated images before motion work. Regenerate or crop when busy detail, bright edges, faces, product seams, fake UI, or accidental text enters the quiet text zone.
 - More images are not better. Use one strong image stage for short motion videos; use 2-4 only when the story truly changes visual worlds.
 
 ## Motion
@@ -89,7 +91,7 @@ For text/icon transition promos, use a kinetic relay standard:
 - Icons and objects must push, mask, scan, type, crop, reveal, compress, split, or hand off the next word.
 - Direction changes should be designed: left/right push, up/down push, scan, wipe, type-on, crop, or hard cut with a visible relay.
 - Empty black fades are allowed only for deliberate silence or final release.
-- Every transition needs a midpoint that can be inspected as a designed frame, not an accidental blur.
+- Every transition needs a midpoint that can be inspected as a designed frame.
 
 Typical timing:
 
@@ -104,7 +106,7 @@ Motion budget:
 - One optional support motion for atmosphere, focus, or transition.
 - Background motion should be slow and camera-like.
 - Text must become still before the viewer needs to read it.
-- At least one signature motion moment per video is enough; every element trying to be special looks cheap.
+- One signature motion moment per video is enough; too many special elements weaken the frame.
 - A good video should lose something important when reduced to screenshots. If screenshots tell the whole story, upgrade the motion craft.
 
 ## Review Gate
@@ -119,7 +121,7 @@ Reject the work if:
 - It has more than one dominant message in a frame.
 - The first eye target is unclear or the main hook is unnecessarily pushed into the lower half.
 - Text overlaps, clips, shrinks unpredictably, or falls outside safe margins.
-- The work silently defaults to 16:9, English copy, or desktop-style density when the prompt did not ask for that.
+- The work defaults to 16:9, English copy, or desktop-style density without a user or platform reason.
 - It is only background plus text when the concept needs a product, process, proof, or memory object.
 - Added visual objects are generic decoration, not part of the story.
 - The first readable frame appears too late.

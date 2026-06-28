@@ -1,5 +1,11 @@
 # Review Report
 
+## Writing Standard
+- Language: plain Chinese for user-facing notes unless the user asks otherwise
+- Sentence style: short, direct, project-specific
+- Avoid: repeated contrast phrasing, self-talk, generic praise, sales slogans, unrelated commentary, and long process narration
+- Keep: output files, checks run, snapshot findings, issues, next edit, remaining risks
+
 ## Output
 - Draft render:
 - Review render:

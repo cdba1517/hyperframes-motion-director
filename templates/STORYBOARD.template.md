@@ -1,5 +1,11 @@
 # Storyboard
 
+## Writing Standard
+- Language: plain Chinese for screen copy and user-facing notes unless the user asks otherwise
+- Sentence style: short, direct, project-specific
+- Avoid: repeated contrast phrasing, self-talk, generic praise, sales slogans, unrelated commentary, and long process narration
+- Keep: on-screen copy, timing, layout contract, motion, asset usage, snapshot risk
+
 ## Global Timing
 - Language: Simplified Chinese promotional copy by default
 - Duration: 10-15s by default

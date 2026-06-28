@@ -9,9 +9,12 @@ const checks = [
   {
     name: "Approval brief exists before production",
     file: "BRIEF_DESIGN_PROPOSAL.md",
-    pattern: /## Essence[\s\S]*## Format[\s\S]*## Visual Direction[\s\S]*First eye target:[\s\S]*Center-impact text decision:[\s\S]*## Image Generation Decision[\s\S]*Default background stage:[\s\S]*Background role:[\s\S]*Layout strategy:[\s\S]*Quiet text zone:[\s\S]*Codex Image Gen after confirmation:[\s\S]*## Kinetic Text Relay Plan[\s\S]*Keyword chain:[\s\S]*Action object chain:[\s\S]*Direction map:[\s\S]*Relay object \/ handoff logic:[\s\S]*Target kinetic relay score:[\s\S]*## Typography And Layout[\s\S]*Title size tier:[\s\S]*Text spacing:[\s\S]*Text-over-image contrast treatment:[\s\S]*Mobile safe-zone handling:[\s\S]*Regenerate \/ recrop trigger:[\s\S]*## Motion Plan[\s\S]*Background motion:[\s\S]*Text transition style:[\s\S]*Kinetic typography plan:[\s\S]*CSS3 \/ SVG structure:[\s\S]*GSAP choreography:[\s\S]*Signature motion moment:[\s\S]*Motion budget:[\s\S]*Motion bounds:[\s\S]*Anti-PPT prevention:[\s\S]*## Confirmation Needed/,
+    pattern: /## Writing Standard[\s\S]*Sentence style:[\s\S]*Avoid:[\s\S]*Keep:[\s\S]*## Essence[\s\S]*## Format[\s\S]*## Visual Direction[\s\S]*First eye target:[\s\S]*Center-impact text decision:[\s\S]*## Image Generation Decision[\s\S]*Default background stage:[\s\S]*Background role:[\s\S]*Layout strategy:[\s\S]*Quiet text zone:[\s\S]*Codex Image Gen after confirmation:[\s\S]*## Kinetic Text Relay Plan[\s\S]*Keyword chain:[\s\S]*Action object chain:[\s\S]*Direction map:[\s\S]*Relay object \/ handoff logic:[\s\S]*Target kinetic relay score:[\s\S]*## Typography And Layout[\s\S]*Title size tier:[\s\S]*Text spacing:[\s\S]*Text-over-image contrast treatment:[\s\S]*Mobile safe-zone handling:[\s\S]*Regenerate \/ recrop trigger:[\s\S]*## Motion Plan[\s\S]*Background motion:[\s\S]*Text transition style:[\s\S]*Kinetic typography plan:[\s\S]*CSS3 \/ SVG structure:[\s\S]*GSAP choreography:[\s\S]*Signature motion moment:[\s\S]*Motion budget:[\s\S]*Motion bounds:[\s\S]*Anti-PPT prevention:[\s\S]*## Confirmation Needed/,
     fields: [
       "Layout strategy",
+      "Sentence style",
+      "Avoid",
+      "Keep",
       "Background source",
       "Focal subject position",
       "Quiet text zone",
@@ -48,9 +51,12 @@ const checks = [
   {
     name: "Design system locks house style",
     file: "DESIGN.md",
-    pattern: /## Metaphor System[\s\S]*#050505[\s\S]*warm gold[\s\S]*## Typography[\s\S]*## Layout[\s\S]*First eye target:[\s\S]*Center-impact policy:[\s\S]*Lower-safe policy:[\s\S]*## Background Text Layout System[\s\S]*Default layout strategy:[\s\S]*Allowed layout contract variants:[\s\S]*Title size tier:[\s\S]*Text rectangle \/ subject rectangle:[\s\S]*Title \/ support \/ CTA spacing:[\s\S]*Mobile safe-zone handling:[\s\S]*Motion bounds:[\s\S]*## Background Image System[\s\S]*Quiet text zone:[\s\S]*## Text Over Image[\s\S]*Minimum contrast rule:[\s\S]*## Components[\s\S]*## Kinetic Text Relay System[\s\S]*Keyword chain:[\s\S]*Action object chain:[\s\S]*Direction vocabulary:[\s\S]*Relay \/ handoff rules:[\s\S]*Kinetic relay score target:[\s\S]*## Motion Personality[\s\S]*Motion budget:[\s\S]*## Motion Craft System[\s\S]*Anti-PPT diagnosis:[\s\S]*Kinetic typography language:[\s\S]*Text transition vocabulary:[\s\S]*CSS3 layers:[\s\S]*SVG layers:[\s\S]*GSAP master timeline structure:[\s\S]*Scene transition bridges:[\s\S]*## Image Generation Plan/,
+    pattern: /## Writing Standard[\s\S]*Sentence style:[\s\S]*Avoid:[\s\S]*Keep:[\s\S]*## Overview[\s\S]*## Metaphor System[\s\S]*#050505[\s\S]*warm gold[\s\S]*## Typography[\s\S]*## Layout[\s\S]*First eye target:[\s\S]*Center-impact policy:[\s\S]*Lower-safe policy:[\s\S]*## Background Text Layout System[\s\S]*Default layout strategy:[\s\S]*Allowed layout contract variants:[\s\S]*Title size tier:[\s\S]*Text rectangle \/ subject rectangle:[\s\S]*Title \/ support \/ CTA spacing:[\s\S]*Mobile safe-zone handling:[\s\S]*Motion bounds:[\s\S]*## Background Image System[\s\S]*Quiet text zone:[\s\S]*## Text Over Image[\s\S]*Minimum contrast rule:[\s\S]*## Components[\s\S]*## Kinetic Text Relay System[\s\S]*Keyword chain:[\s\S]*Action object chain:[\s\S]*Direction vocabulary:[\s\S]*Relay \/ handoff rules:[\s\S]*Kinetic relay score target:[\s\S]*## Motion Personality[\s\S]*Motion budget:[\s\S]*## Motion Craft System[\s\S]*Anti-PPT diagnosis:[\s\S]*Kinetic typography language:[\s\S]*Text transition vocabulary:[\s\S]*CSS3 layers:[\s\S]*SVG layers:[\s\S]*GSAP master timeline structure:[\s\S]*Scene transition bridges:[\s\S]*## Image Generation Plan/,
     fields: [
       "Default layout strategy",
+      "Sentence style",
+      "Avoid",
+      "Keep",
       "Allowed layout contract variants",
       "First eye target",
       "Center-impact policy",
@@ -89,9 +95,12 @@ const checks = [
   {
     name: "Storyboard includes hero frames, metaphor roles, and visual asset breakdown",
     file: "STORYBOARD.md",
-    pattern: /hero frame[\s\S]*Text role:[\s\S]*First eye target:[\s\S]*Center-impact decision:[\s\S]*Hero text zone:[\s\S]*Why this zone owns attention:[\s\S]*Metaphor role[\s\S]*Background \/ main visual state:[\s\S]*Layout contract:[\s\S]*Title size tier:[\s\S]*Readable hold:[\s\S]*Text transition:[\s\S]*Text transition device:[\s\S]*Kinetic relay:[\s\S]*Directional transition:[\s\S]*Transition midpoint frame:[\s\S]*Kinetic relay score note:[\s\S]*What changes if this motion is removed:[\s\S]*Choreography:[\s\S]*Motion bounds:[\s\S]*Transition midpoint snapshot:[\s\S]*Anti-PPT risk:[\s\S]*Hold-frame verdict:[\s\S]*Visual Asset Breakdown[\s\S]*Kinetic relay keyword chain:[\s\S]*Direction map:[\s\S]*Relay continuity rules:[\s\S]*Background stage:[\s\S]*Layout contracts:[\s\S]*Snapshot Plan[\s\S]*Expected dominant visual/i,
+    pattern: /## Writing Standard[\s\S]*Sentence style:[\s\S]*Avoid:[\s\S]*Keep:[\s\S]*hero frame[\s\S]*Text role:[\s\S]*First eye target:[\s\S]*Center-impact decision:[\s\S]*Hero text zone:[\s\S]*Why this zone owns attention:[\s\S]*Metaphor role[\s\S]*Background \/ main visual state:[\s\S]*Layout contract:[\s\S]*Title size tier:[\s\S]*Readable hold:[\s\S]*Text transition:[\s\S]*Text transition device:[\s\S]*Kinetic relay:[\s\S]*Directional transition:[\s\S]*Transition midpoint frame:[\s\S]*Kinetic relay score note:[\s\S]*What changes if this motion is removed:[\s\S]*Choreography:[\s\S]*Motion bounds:[\s\S]*Transition midpoint snapshot:[\s\S]*Anti-PPT risk:[\s\S]*Hold-frame verdict:[\s\S]*Visual Asset Breakdown[\s\S]*Kinetic relay keyword chain:[\s\S]*Direction map:[\s\S]*Relay continuity rules:[\s\S]*Background stage:[\s\S]*Layout contracts:[\s\S]*Snapshot Plan[\s\S]*Expected dominant visual/i,
     fields: [
       "Background / main visual state",
+      "Sentence style",
+      "Avoid",
+      "Keep",
       "Text role",
       "Text-safe zone",
       "First eye target",
@@ -125,9 +134,12 @@ const checks = [
   {
     name: "Review report records validation, style gate, and next edit",
     file: "REVIEW_REPORT.md",
-    pattern: /## Validation[\s\S]*first eye target[\s\S]*transition midpoints[\s\S]*layout overflow[\s\S]*kinetic typography[\s\S]*SVG \/ CSS3 motion structure[\s\S]*anti-PPT verdict[\s\S]*## Kinetic Relay Score[\s\S]*First-eye impact \/ 20[\s\S]*Relay continuity \/ 20[\s\S]*Total \/ 100[\s\S]*## Style Gate[\s\S]*Background image or pure-code exception is verified:[\s\S]*Layout contract matches the image and message shape:[\s\S]*TextRect, subjectRect, and safeBottomY are verified:[\s\S]*Mobile safe zones are respected:[\s\S]*Motion bounds preserve readability:[\s\S]*Motion has a clear attention target:[\s\S]*Text transitions define entry, lock, emphasis, exit, and bridge:[\s\S]*Kinetic relay keyword chain is visible when relevant:[\s\S]*Action objects participate in transitions when relevant:[\s\S]*Video would lose meaning if reduced to screenshots:[\s\S]*Hold-frame verdict passed for hero frames:[\s\S]*## No-Go Gates[\s\S]*Kinetic relay promos target 100 before final delivery:[\s\S]*Kinetic relay promos below 90 are blocked from final delivery:[\s\S]*Anti-PPT verdict:[\s\S]*## Layout Contract Revisions[\s\S]*## Recommended Next Edit[\s\S]*## Remaining Risks/,
+    pattern: /## Writing Standard[\s\S]*Sentence style:[\s\S]*Avoid:[\s\S]*Keep:[\s\S]*## Output[\s\S]*## Validation[\s\S]*first eye target[\s\S]*transition midpoints[\s\S]*layout overflow[\s\S]*kinetic typography[\s\S]*SVG \/ CSS3 motion structure[\s\S]*anti-PPT verdict[\s\S]*## Kinetic Relay Score[\s\S]*First-eye impact \/ 20[\s\S]*Relay continuity \/ 20[\s\S]*Total \/ 100[\s\S]*## Style Gate[\s\S]*Background image or pure-code exception is verified:[\s\S]*Layout contract matches the image and message shape:[\s\S]*TextRect, subjectRect, and safeBottomY are verified:[\s\S]*Mobile safe zones are respected:[\s\S]*Motion bounds preserve readability:[\s\S]*Motion has a clear attention target:[\s\S]*Text transitions define entry, lock, emphasis, exit, and bridge:[\s\S]*Kinetic relay keyword chain is visible when relevant:[\s\S]*Action objects participate in transitions when relevant:[\s\S]*Video would lose meaning if reduced to screenshots:[\s\S]*Hold-frame verdict passed for hero frames:[\s\S]*## No-Go Gates[\s\S]*Kinetic relay promos target 100 before final delivery:[\s\S]*Kinetic relay promos below 90 are blocked from final delivery:[\s\S]*Anti-PPT verdict:[\s\S]*## Layout Contract Revisions[\s\S]*## Recommended Next Edit[\s\S]*## Remaining Risks/,
     fields: [
       "Background image or pure-code exception is verified",
+      "Sentence style",
+      "Avoid",
+      "Keep",
       "Background role supports meaning rather than decoration",
       "Layout contract matches the image and message shape",
       "TextRect, subjectRect, and safeBottomY are verified",

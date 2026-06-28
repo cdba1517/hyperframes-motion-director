@@ -1,5 +1,11 @@
 # Brief Design Proposal
 
+## Writing Standard
+- Language: plain Chinese unless the user asks otherwise
+- Sentence style: short, direct, project-specific
+- Avoid: repeated contrast-pivot phrasing, self-talk, generic praise, sales slogans, unrelated commentary, and long process narration
+- Keep: decisions, visual plan, Image Gen asset plan, layout, motion, risks, confirmation request
+
 ## Essence
 - Core viewpoint:
 - Largest conflict:
@@ -38,21 +44,28 @@
 - Generate images: yes / no
 - Default background stage: generated / supplied / pure-code exception
 - Background role: stage / symbol / texture / anchor / transition plate
+- Target scene / beat:
 - Layout strategy:
 - Background source:
+- Image ratio / target size:
 - Focal subject position:
 - Quiet text zone:
+- Required negative space:
+- Text-safe boundaries:
 - Crop / overlay risk:
 - Codex Image Gen after confirmation: yes / no
 - Image 1:
 - Image 1 role:
 - Image 1 required size / aspect:
+- Image 1 prompt constraints:
 - Image 2:
 - Image 2 role:
 - Image 2 required size / aspect:
+- Image 2 prompt constraints:
 - What stays in HyperFrames:
 - No baked-in text unless required:
 - Forbidden image content:
+- Regenerate / recrop trigger:
 
 ## Visual Object Plan
 - Primary visual object:

@@ -2,17 +2,28 @@
 
 This workflow turns a vague motion-video request into a reviewable HyperFrames production. Follow it in order for new videos. For edits, change only the affected stage.
 
-The default creative direction is a Chinese-first vertical promotional film with black-background cinematic metaphor. Do not draw the surface topic. Extract the essence of the article, theme, product, or argument, then build a restrained symbol that carries the point.
+The default creative direction is a Chinese-first vertical promotional film with black-background cinematic metaphor. Extract the essence of the article, theme, product, or argument, then build a restrained symbol that carries the point.
 
-New videos need a background stage by default. It can be generated, supplied, or pure code, but any exception must be written in the brief. The background is not decoration; it creates space, carries metaphor, protects text readability, or grounds the product.
+New videos need a background stage by default. It can be generated, supplied, or pure code, and any exception must be written in the brief. The background creates space, carries metaphor, protects text readability, or grounds the product.
 
 For text over or near background imagery, use `references/text-over-background-layout.md`. Choose a candidate layout strategy before image generation, then lock the final per-beat layout contract after generated or supplied imagery is inspected. The final contract owns image ratio, text rectangle, subject rectangle, quiet text zone, title tier, mobile safe zones, and motion bounds.
 
-For motion craft, use `references/motion-craft.md`. Static hero frames are necessary, but they are not enough. The finished piece must define where attention starts, how text moves, how scenes bridge, and which CSS/SVG/GSAP devices make it feel like motion rather than slides.
+For motion craft, use `references/motion-craft.md`. Static hero frames are necessary. The finished piece must define where attention starts, how text moves, how scenes bridge, and which CSS/SVG/GSAP devices make it feel like motion rather than slides.
 
 For text/icon transition references, use kinetic text relay as the default structure. This means the film is built from a keyword chain, small action objects, directional pushes/wipes/scans, readable holds, and transition midpoint snapshots. The key question is not "what does each card say?" but "how does one word physically hand attention to the next?"
 
 New video work is two-phase: first produce a brief/design proposal and wait for user confirmation; only then produce images, HyperFrames source, snapshots, renders, and review artifacts.
+
+## Output Writing Standard
+
+Artifacts should read like production notes.
+
+- Use short, direct sentences.
+- State project-specific choices, constraints, and risks.
+- Keep user-facing proposal copy in plain Chinese by default.
+- Avoid repeated contrast-pivot phrasing in Chinese or English.
+- Avoid self-talk, internal reasoning, generic praise, inflated sales language, and unrelated commentary.
+- Cut paragraphs that do not help approve, produce, validate, or review the video.
 
 ## 1. Intake
 
@@ -63,6 +74,7 @@ Before any implementation, produce `BRIEF_DESIGN_PROPOSAL.md` or the equivalent 
 - Essence and metaphor.
 - Structure choice.
 - Language, platform, aspect ratio, pixel size, duration, FPS, safe margins.
+- Writing style: plain, compact, project-specific, no self-talk, no generic pitch language, no repeated contrast-connector phrasing.
 - Image generation decision, including default background image role or the explicit reason it is not needed.
 - Typography, layout, overflow handling, and mobile crop handling.
 - Motion plan and risk gates.
@@ -71,7 +83,7 @@ Before any implementation, produce `BRIEF_DESIGN_PROPOSAL.md` or the equivalent 
 - Motion craft plan: camera behavior, kinetic typography, text transition style, SVG/CSS structure, GSAP timeline structure, signature motion moment, and anti-PPT risk.
 - Kinetic text relay plan when relevant: keyword chain, action-object chain, directional transition map, relay object, readable holds, transition midpoint snapshots, target kinetic relay score of 100, and no-delivery threshold below 90.
 
-Stop here and ask for confirmation. Do not generate images or write composition code until the user confirms.
+Stop here and ask for confirmation. Generate images and write composition code after the user confirms.
 
 ## 3. Design System
 
@@ -123,7 +135,7 @@ Choose structure by material:
 
 ## 5. Storyboard Detail
 
-The storyboard is where direction happens. Do not skip it.
+The storyboard is where direction happens. Keep it explicit.
 
 Every beat should specify:
 
@@ -162,6 +174,7 @@ Each planned/generated image must specify:
 - Role: stage, symbol, texture, anchor, or transition plate.
 - Source: supplied, official, generated, or fallback pure-code.
 - Aspect ratio and target size.
+- Target scene/beat.
 - Layout contract and image ratio.
 - Focal subject location.
 - Quiet text zone.
@@ -170,7 +183,7 @@ Each planned/generated image must specify:
 - Local output path.
 - Forbidden content: no text, fake logos, icons, labels, diagrams, decorative clutter, or watermark unless required.
 
-Use Codex Image Gen by default after user confirmation when a generated bitmap is needed. Do not reference project-bound generated images until they have been moved into the project asset folders.
+Use Codex Image Gen by default after user confirmation when a generated bitmap is needed. Inspect returned images against the layout contract before implementation. Recrop or regenerate if the quiet zone is busy, the subject lands in an unsafe crop area, or fake UI/text/logos appear. Reference project-bound generated images only after they have been moved into the project asset folders.
 
 ## 7. Optional Beat Map
 
@@ -206,9 +219,9 @@ Check:
 - Safe margins hold.
 - Vertical platform overlay zones are respected, especially bottom UI / CTA collision risk.
 - Text has max width, max lines, explicit overflow behavior, and stable breakpoints.
-- Long words, mixed Chinese/English copy, CTA labels, and subtitles do not escape their containers.
+- Long words, mixed Chinese/English copy, CTA labels, and subtitles stay inside their containers.
 - The composition does not depend on motion to make sense.
-- Motion paths preserve the quiet zone and do not drag readable copy through unsafe mobile UI zones.
+- Motion paths preserve the quiet zone and keep readable copy away from unsafe mobile UI zones.
 - Transitions use the image subject, text axis, mask, light direction, or camera move as a bridge; they are not separate decorative effects.
 - Product or brand appears with enough weight.
 - The metaphor can be understood without explanatory icon labels.
@@ -238,13 +251,13 @@ Motion budget:
 - Background motion should be slow push, parallax, focus pull, or light sweep only.
 - Main text should settle before it needs to be read.
 - Important reveals need a still hold, not continuous drift.
-- Scene transitions should overlap or share an anchor; do not cut through empty black unless the black frame is the point.
+- Scene transitions should overlap or share an anchor. Empty black is reserved for deliberate silence or final release.
 
 Motion craft requirements:
 
 - Build a labeled GSAP master timeline for multi-scene work.
 - Use CSS3/SVG devices for structural reveals when appropriate: masks, clip paths, scan paths, underlines, frames, connectors, or perspective layers.
-- Give important text a real transition pattern, not only opacity and y-position.
+- Give important text a transition pattern beyond opacity and y-position.
 - Let hook or amplified keyword text occupy center or upper-center impact when it is the main subject.
 - Reserve lower-safe placement for CTA, proof notes, or subject-dominant frames.
 - Include at least one signature motion moment that belongs to the metaphor.
@@ -291,7 +304,7 @@ When revising, do not rewrite the whole composition unless the user asks for a n
 Map feedback to the smallest change:
 
 - "Make it punchier" usually means timing, transition, or copy density.
-- "More premium" usually means less clutter, stronger type, longer holds, fewer effects.
+- "More cinematic" usually means less clutter, stronger type, longer holds, fewer effects.
 - "More clear" usually means script or hierarchy.
 - "The product gets lost" means layout, contrast, or product scale.
 - "Music doesn't hit" means beat map and timeline positions.
