@@ -14,7 +14,7 @@ Most weak motion videos fail for the same reasons:
 - Important text is placed in a safe lower area even when it should dominate the first attention zone.
 - Motion is only a slide entrance, so the video feels like a PPT export.
 
-The fix: background creates the world, typography carries the message, motion directs the eye.
+The fix: background creates the world, support assets add semantic depth, typography carries the message, and motion directs the eye.
 
 Before generating a background or animating type over it, choose the layout contract from `references/text-over-background-layout.md`. The contract defines where the subject sits, where text can sit, which image ratio to generate, where mobile safe boundaries live, and where motion is allowed to travel.
 
@@ -32,10 +32,10 @@ In Phase 1, plan images only. After confirmation, use Codex Image Gen by default
 
 | Video Type | Image Set |
 | --- | --- |
-| 6-10s kinetic motion video | 1 background stage, optional texture |
-| 10-15s cinematic short | 1 background stage, 1 symbol/detail, optional anchor |
-| 15-30s launch film | 2-4 scene backgrounds, 1 hero symbol, optional anchor |
-| Product video | Official product/UI assets first; generate only atmosphere or metaphor plates |
+| 6-10s kinetic motion video | 1 background stage, 0-2 support assets |
+| 10-15s cinematic short | 1 background stage, 1 symbol or anchor, 1-3 support assets |
+| 15-30s launch film | 2-4 scene backgrounds, 1 recurring visual motif, 3-6 support assets reused across beats |
+| Product video | Official product/UI assets first; generate atmosphere, metaphor plates, masks, or proof-safe crops only when needed |
 
 If two images do the same job, keep the stronger one.
 
@@ -50,6 +50,32 @@ Each image gets exactly one primary role:
 - Transition plate: mask, wipe, focus pull, or morph source.
 
 Reject images that only fill space.
+
+## Support Asset Decision
+
+Support assets are not optional decoration. They are the answer to whether the video needs more visual layers than the background stage. The answer can be "none", but it must be deliberate.
+
+Use support assets for:
+
+- Symbol or anchor: the recurring object, product surface, or visual motif the viewer should remember.
+- Texture or atmosphere: grain, haze, material, shadow plate, dust, or light falloff that makes the scene tactile.
+- Transition plate: matte, aperture, wipe source, mask, focus layer, morph source, or proof-safe cutout.
+- Semantic glyph: one minimal meaning-bearing mark, not an icon set.
+- Product / UI fragment: a faithful product, interface, chart, or proof crop used when the story needs evidence.
+- Motion accent: line, glint, trace, path, bracket, rail, or particle-like detail with a defined attention or transition job.
+
+Generate support bitmap assets only when image generation produces something HyperFrames cannot do better. Prefer CSS/SVG/HyperFrames for lines, masks, marks, glyphs, geometric accents, UI outlines, and anything that must stay sharp, recolorable, or tightly synchronized.
+
+Every support asset must specify:
+
+- Role and source: generated / supplied / code-generated / mixed.
+- Local path after generation when bitmap-based.
+- Shared style lock: palette, lighting direction, texture language, contrast, and perspective.
+- Safe zones: which text or platform regions it must avoid.
+- Motion purpose: reveal, depth, transition, proof, attention guide, or hold support.
+- Deletion trigger: what makes it noise.
+
+Never use a support asset only because the frame feels empty. First ask whether the copy, crop, scale, light, or timing is weak.
 
 ## Text Over Image
 
@@ -113,6 +139,7 @@ Every generated-image plan should state:
 - Palette and forbidden colors.
 - No baked-in text unless required.
 - No fake logos, labels, explanatory icons, diagrams, watermark, or decorative clutter.
+- For support assets: transparent/cutout intent if needed, isolation margin, consistent lighting, and no unrequested icon set.
 - Local output path after acceptance.
 
 After generation, inspect the image before writing animation code:
@@ -128,6 +155,8 @@ Reject the work if:
 
 - There is no background plan or explicit exception.
 - The background could be swapped without changing meaning.
+- Support assets are missing when the frame needs semantic depth, transition material, or product proof.
+- A support asset has no role, source, motion purpose, safe-zone rule, style lock, or deletion trigger.
 - Text readability depends on luck.
 - Motion can be removed without changing the story.
 - More than one layer tries to be the hero.

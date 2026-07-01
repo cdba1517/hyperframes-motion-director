@@ -33,6 +33,8 @@
 - Background / main visual state:
 - Primary visual object:
 - Functional visual marks:
+- Support assets active:
+- Support asset motion purpose:
 - Object removal test:
 - Text-safe zone:
 - Layout contract:
@@ -69,6 +71,8 @@
 - Background / main visual state:
 - Primary visual object:
 - Functional visual marks:
+- Support assets active:
+- Support asset motion purpose:
 - Object removal test:
 - Text-safe zone:
 - Layout contract:
@@ -105,6 +109,8 @@
 - Background / main visual state:
 - Primary visual object:
 - Functional visual marks:
+- Support assets active:
+- Support asset motion purpose:
 - Object removal test:
 - Text-safe zone:
 - Layout contract:
@@ -141,6 +147,8 @@
 - Background / main visual state:
 - Primary visual object:
 - Functional visual marks:
+- Support assets active:
+- Support asset motion purpose:
 - Object removal test:
 - Text-safe zone:
 - Layout contract:
@@ -169,6 +177,11 @@
 - Generated texture / atmosphere:
 - Primary visual object system:
 - Functional mark types:
+- Support asset plan:
+- Support asset roles / source / local paths:
+- Support asset style lock:
+- Support asset safe zones:
+- Support asset deletion triggers:
 - Object restraint rules:
 - Kinetic relay keyword chain:
 - Kinetic relay action object chain:

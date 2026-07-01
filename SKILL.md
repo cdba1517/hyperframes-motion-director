@@ -103,6 +103,32 @@ Hard rules:
 - Add at most one primary object system and three functional mark types in a 20s vertical promo.
 - The review report must state whether added visual objects are necessary, restrained, and removable without harming the story.
 
+## Support Asset Decision Rule
+
+Do not require decorative assets. Require a support-asset decision. A strong motion video often needs more than a single background, but every extra bitmap, SVG, mark, texture, or shape must have a semantic role, a visual-system relationship, and a motion purpose.
+
+For every new video brief, decide whether the direction needs support assets beyond the background stage:
+
+- Symbol: the central metaphor, product silhouette, number object, or visual anchor.
+- Texture: grain, haze, material surface, shadow plate, dust, or light falloff that makes the frame tactile.
+- Light / mask / transition plate: sweep, aperture, wipe source, matte, focus layer, or morph source used to reveal or bridge beats.
+- Semantic glyph: a minimal meaning-bearing mark that compresses an idea; not an icon set.
+- Product / UI fragment: a faithful product, interface, chart, or proof crop used only when the story needs evidence.
+- Motion accent: line, glint, trace, path, bracket, rail, or particle-like detail with a defined attention or transition job.
+
+Use Codex Image Gen after confirmation for support bitmap assets when they cannot be made more cleanly in HyperFrames/CSS/SVG. Prefer code-generated lines, masks, simple glyphs, vector marks, and typography whenever they will be sharper, more controllable, or easier to animate than a generated image.
+
+Each support asset must declare: role, source, local path if bitmap-based, visual relationship to the background, safe zones, motion purpose, entrance/exit timing, and deletion trigger. Delete or omit any support asset that does not strengthen meaning, depth, transition continuity, product proof, or readability.
+
+Default support-asset guidance:
+
+- 6-10s kinetic video: 1 background stage plus 0-2 support assets.
+- 10-15s cinematic short: 1 background stage, 1 symbol or anchor, and 1-3 support assets.
+- 15-30s launch film: 2-4 scene backgrounds, 1 recurring visual motif, and 3-6 support assets reused across beats.
+- Product video: official product/UI assets first; generate atmosphere, metaphor plates, masks, or proof-safe crops only when needed.
+
+All generated assets in one video must share the same art direction: palette, lighting direction, lens/texture language, contrast level, and negative-space discipline. A generated asset sheet is acceptable only when every cut-out element has a named role and will be isolated before animation.
+
 ## Anti-PPT Motion Craft Rule
 
 Weak motion work often becomes a static poster sequence with opacity fades. Treat that as a quality failure.
@@ -279,9 +305,10 @@ The proposal must include:
 - Background plan: image role, layout contract, subject position, text-safe area, crop risks, and whether Codex Image Gen will be used after confirmation.
 - Writing standard: terse, project-specific, no self-talk, no generic hype, no repeated contrast-connector phrasing.
 - Visual object plan: primary object, functional marks, texture pieces, why each object is necessary, and excluded object types.
+- Support asset plan: whether the video needs symbol, texture, transition plate, semantic glyph, product/UI fragment, or motion accent assets; what stays code-generated; and what must be deleted if it becomes decoration.
 - Typography: title/support/CTA scale, title size tier, line-height, letter-spacing, maximum lines, text spacing, overflow handling.
 - Layout: dominant visual mass, layout contract, grid/alignment, crop-safe zones, mobile overlay risks.
-- Motion: main reveal, background motion, transition style, hold times, easing, audio hit plan, motion bounds, and what must remain still.
+- Motion: main reveal, background motion, support asset choreography, transition style, hold times, easing, audio hit plan, motion bounds, and what must remain still.
 - Motion craft: camera behavior, kinetic typography, text transition pattern, SVG/CSS3 layers, GSAP timeline structure, and signature motion moment.
 - Kinetic text relay plan when relevant: keyword chain, action object chain, push/wipe/scan direction map, relay object, transition midpoint snapshots, and 100-point anti-PPT score target.
 - Risk gates: what could make it unreadable, noisy, off-style, or visually generic.
@@ -429,13 +456,14 @@ node scripts/validate_design_engineering.mjs <project-dir>
 
 ### 6. Visual Asset Plan
 
-If the confirmed proposal calls for bitmap assets, generate or source them before HyperFrames implementation. For new videos, default to at least one background image stage unless the brief explains a pure-code or supplied-asset approach.
+If the confirmed proposal calls for bitmap assets, generate or source them before HyperFrames implementation. For new videos, default to one background image stage plus a support-asset decision unless the brief explains a pure-code or supplied-asset approach.
 
 For each Codex Image Gen request:
 
-- Generate only assets needed for the background stage, center symbol, texture, product/person/object anchor, or transition plate.
-- Give each image one role and one target scene.
+- Generate only assets needed for the background stage, center symbol, texture, product/person/object anchor, transition plate, semantic glyph, product/UI fragment, or motion accent.
+- Give each image or support asset one role and one target scene.
 - Specify aspect ratio, target size, focal subject position, quiet text zone, crop-safe region, platform-safe boundaries, and forbidden content.
+- Specify support asset style lock, safe zones, motion purpose, entrance/exit timing, and deletion trigger before generation.
 - Ask for sparse composition, usable negative space, dark contrast, and no baked-in text unless exact title text is required.
 - Keep typography, proof notes, CTA, logos, masks, crops, parallax, focus pulls, and timing in HyperFrames whenever possible.
 
@@ -572,6 +600,9 @@ Before claiming the video is ready, verify:
 - Text fits safe margins, max lines, overflow rules, crop-safe areas, and platform overlay zones.
 - Text-over-background beats declare textRect, subjectRect, safeBottomY, title tier, quiet zone, and motion bounds.
 - Generated images have a role, target scene, quiet text zone, accepted local path, and usable crop before use.
+- Support asset decision is documented for new videos, even when the decision is none.
+- Support assets have role, source, style lock, safe zones, motion purpose, entrance/exit timing, and deletion trigger before they are generated or animated.
+- No support asset competes with the dominant text, symbol, product, or CTA.
 - Multi-scene work has meaningful scene bridges, readable holds, and a motion craft plan.
 - Kinetic relay work includes keyword chain, action-object chain, direction map, relay continuity, midpoint snapshots, and a score of 90 or higher.
 - Design engineering validation has run, including scene schema, vector template, and motion primitive checks.

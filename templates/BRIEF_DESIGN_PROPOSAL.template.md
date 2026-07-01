@@ -76,6 +76,12 @@
 - Removal test:
 - Objects to avoid:
 - Icon / decoration restraint:
+- Support asset decision: none / generated / supplied / code-generated / mixed
+- Support asset roles:
+- Support asset count:
+- Support asset style lock:
+- Support asset motion purpose:
+- Support asset deletion trigger:
 
 ## Kinetic Text Relay Plan
 - Use kinetic relay mode: yes / no
@@ -130,12 +136,14 @@
 - What must stay still:
 - Motion budget:
 - Motion bounds:
+- Support asset choreography:
 - Anti-PPT prevention:
 
 ## Risk Gates
 - Cheapness risk:
 - Readability risk:
 - Noise risk:
+- Support asset noise risk:
 - Style drift risk:
 - Technical risk:
 

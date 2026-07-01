@@ -92,6 +92,10 @@ Use this section for text/icon transition promos.
 - Functional marks replace explanation instead of decorating:
 - Texture pieces stay sparse and metaphor-specific:
 - Visual objects pass the removal test:
+- Support asset decision is documented:
+- Support assets share style lock with the background:
+- Support assets have role, source, motion purpose, safe zones, and deletion triggers:
+- Unneeded support assets were omitted or removed:
 - Layout contract matches the image and message shape:
 - TextRect, subjectRect, and safeBottomY are verified:
 - Text sits in a safe quiet zone:

@@ -45,6 +45,27 @@ Avoid:
 
 Before implementation, run the removal test: if deleting the object changes nothing about comprehension, attention, trust, or memorability, remove it.
 
+## Support Assets
+
+Support assets are the production form of visual objects: generated bitmaps, supplied crops, SVG marks, code-generated masks, or motion accents used by the renderer. They may improve cinematic quality only when they remain subordinate to the dominant idea.
+
+Use support assets for:
+
+- A recurring symbol or anchor that carries the metaphor.
+- Texture, haze, light falloff, shadow plate, material detail, or proof-safe crop that makes the frame tactile.
+- Mask, matte, glint, trace, rail, path, or transition plate that gives motion a physical bridge.
+- Product/UI fragment, data object, or evidence crop when the beat needs proof.
+- Minimal semantic glyphs when they compress meaning without explaining the frame.
+
+Reject support assets when:
+
+- They fill empty space without changing meaning.
+- They form an icon pile, diagram, or second visual language.
+- They compete with title, symbol, product, or CTA.
+- Their lighting, texture, perspective, or contrast does not match the scene.
+- Their motion can be removed without changing attention, reveal, proof, or transition.
+- They enter `textRect`, bottom platform overlays, or other declared safe zones.
+
 ## Typography And Layout
 
 - Default output format is Simplified Chinese vertical promotional video: 9:16, `1080x1920`, with platform-safe top and bottom zones.

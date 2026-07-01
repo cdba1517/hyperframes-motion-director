@@ -2,6 +2,29 @@
 
 All notable changes to this project will be documented in this file.
 
+## [2.5.0] - 2026-07-01
+
+### Added
+
+- Added support-asset decision rules for generated, supplied, code-generated, or mixed symbol, texture, transition plate, semantic glyph, product/UI fragment, and motion accent assets.
+- Added support-asset planning fields to the brief, design, storyboard, and review templates.
+- Added support-asset completeness checks to `scripts/validate_artifacts.mjs`.
+
+### Changed
+
+- Expanded motion/background guidance from image-count planning to asset-role planning with source, style lock, safe zones, motion purpose, and deletion-trigger requirements.
+- Clarified when to use Codex Image Gen for bitmap support assets versus HyperFrames/CSS/SVG for sharper code-generated marks, masks, traces, and motion accents.
+- Updated visual review guidance so extra assets must add meaning, depth, proof, transition continuity, or readability rather than fill empty space.
+
+### Validation
+
+- Ran `node scripts/check-structure.mjs`.
+- Generated a temporary project scaffold with timing and motion templates.
+- Ran strict asset checks against the temporary scaffold.
+- Confirmed blank templates fail artifact completeness validation as expected until production fields are filled.
+- Ran syntax checks for the changed helper scripts.
+- Ran `git diff --check`.
+
 ## [2.4.0] - 2026-07-01
 
 ### Added

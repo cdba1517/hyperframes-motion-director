@@ -91,6 +91,20 @@
 - Caption:
 - CTA / brand lockup:
 
+## Support Asset System
+- Support asset decision: none / generated / supplied / code-generated / mixed
+- Asset count range:
+- Asset roles: symbol / texture / anchor / transition plate / semantic glyph / motion accent / product fragment
+- Shared style lock: palette / lighting direction / texture language / perspective
+- Generated asset sheet needed: yes / no
+- Asset isolation / cutout plan:
+- Code-generated elements:
+- Bitmap-generated elements:
+- Local asset paths after generation:
+- Safe-zone rules:
+- Motion purpose per asset:
+- Deletion trigger:
+
 ## Kinetic Text Relay System
 - Use kinetic relay mode:
 - Keyword chain:
@@ -143,6 +157,10 @@
 - Key visual 2 acceptance test:
 - Texture / atmosphere:
 - Texture role / size:
+- Support asset sheet:
+- Support asset sheet roles / isolation margins:
+- Semantic glyphs or motion accents:
+- Which elements stay code-generated:
 - Required negative space:
 - Forbidden generated content:
 - Prompt constraints:
@@ -154,11 +172,13 @@
 - Use black, white, gray, and warm gold only.
 - Keep one dominant idea per frame.
 - Use paper grain, volume haze, shallow depth of field, rim light, and restrained metallic detail.
+- Use support assets only when they strengthen meaning, depth, proof, or transition continuity.
 
 ## Don't
 - Avoid ordinary illustration, ecommerce banner layout, icon piles, generic neon tech, multicolor palettes, and busy collage.
 - Avoid decoration that only fills empty space.
 - Avoid labels that explain the metaphor.
+- Do not generate a decorative asset sheet without named roles, safe zones, and motion purpose.
 
 ## Accessibility / Readability
 - Contrast:
