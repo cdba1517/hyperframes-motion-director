@@ -9,6 +9,8 @@ Use this skill to turn a vague video request into a reviewable HyperFrames produ
 
 HyperFrames handles rendering. This skill handles direction, assets, layout, motion planning, and delivery checks.
 
+When the film promotes a concrete product, tool, skill, CLI, app, API, workflow, template library, or creative system, treat the work as a premium product promo, not only a cinematic metaphor short. The video must show product proof: commands, cards, screenshots, output previews, modules, numbers, chips, icons, marks, or workflow states that make the claim visible.
+
 ## Core Principle
 
 Work from the final viewing experience backward:
@@ -44,6 +46,32 @@ Forbidden by default:
 - Ordinary illustration, ecommerce banner composition, icon piles, generic tech dashboards, neon cyberpunk, multicolor palettes, gradient clutter, decorative particles, explain-the-concept diagrams, and busy collage.
 - Literal article-surface drawings when a metaphor would be clearer.
 - PPT-like sequencing: static title cards, repeated fade-up scenes, identical centered layouts, empty black fades, or text pasted over wallpaper.
+
+## Premium Product Promo Rule
+
+For product, tool, CLI, SaaS, API, skill, template, workflow, or system promos, black cinematic style is only the base layer. It is not enough.
+
+Visual components are mandatory for premium product promos. Do not proceed to implementation with only a background image, big titles, scan lines, and one symbol. That produces a single-note film. A premium promo needs a reusable component library that makes the product feel real.
+
+The film must build a product proof ecosystem:
+
+- Product proof artifacts: commands, UI surfaces, output cards, screenshots, generated examples, module labels, theme stacks, provider chips, numbers, validations, reports, or before/after states.
+- Component library: command card, output/draft card, stat block, module chip group, provider chip group, proof card, product frame, anchored route/signal, theme/output stack, CTA badge, or equivalent product-specific surfaces.
+- Icon and decorative system: marks, chips, rails, brackets, glows, fragments, panels, shadows, and texture must be named, reusable, and tied to meaning.
+- Motion interactions: each major component must reveal a product state change, not only enter the scene.
+- Copy ladder: pain -> mechanism -> proof -> confidence -> CTA. If a line could fit any product, rewrite it.
+
+Use `references/premium-product-promo.md` before proposing, storyboarding, implementing, or reviewing a product promo, especially when the user provides a premium reference or complains about missing icon libraries, decorative elements, image resources, animation interaction, or top-tier design quality.
+
+Default product promo asset target for a 10-18s vertical film:
+
+- 1 product/brand lockup.
+- 1 concrete product surface.
+- 2-4 proof artifacts.
+- 4-8 taxonomy chips, labels, icons, or marks.
+- 1 recurring motion object, anchored signal, or route that connects scenes.
+
+If the brief cannot name at least three product-specific proof artifacts and four reusable visual components, do not hide behind an abstract metaphor. Inspect the project, use existing assets, generate product-safe mockups, capture screenshots, or state that the result will be a concept film rather than a premium product promo.
 
 ## Background And Motion Rule
 
@@ -102,6 +130,29 @@ Hard rules:
 - Prefer project-specific objects: source paper, film frame, scan rail, confirmation stamp, inspection bracket, product surface, timeline, lens, cursor, map route, seal, or artifact.
 - Add at most one primary object system and three functional mark types in a 20s vertical promo.
 - The review report must state whether added visual objects are necessary, restrained, and removable without harming the story.
+
+## Anchored Connector Rule
+
+Lines, route paths, rails, scan lines, arcs, underlines, brackets, and connector glows are not automatically premium. They are support objects. Use them only when they are anchored to a concrete object, word, component edge, node, cursor, status mark, or CTA.
+
+Before keeping any connector, name:
+
+- Start anchor: the exact object or word it leaves.
+- End anchor: the exact object, word, node, or component it reaches.
+- Job: reveal, route, compare, focus, validate, hand off, or close.
+- Motion: how it changes state rather than floats as decoration.
+- Safe zone: where it cannot cross text, CTA, product surfaces, or platform overlays.
+- Deletion test: what meaning, proof, or attention direction is lost if it is removed.
+
+Reject or replace connectors when:
+
+- The line floats in empty space without a visible start and end.
+- The line is only an elegant divider, flourish, or curve.
+- The line competes with the title or product proof.
+- The same connection is clearer as a card edge, status dot, node sequence, chip state, frame corner, progress strip, cursor, highlight, or CTA border.
+- The viewer would understand the scene equally well without it.
+
+Prefer component-attached signals for premium product promos: card top/bottom highlights, node sequences, status dots, short progress strips, inspection corners, screenshot check marks, and CTA edge lighting. These usually feel more built and less decorative than free-floating arcs.
 
 ## Support Asset Decision Rule
 
@@ -244,7 +295,7 @@ Every implemented composition should use:
 Use premium GSAP plugins only when they serve the beat:
 
 - `SplitText` for large Chinese hook lines, keyword chains, and CTA lockups.
-- `DrawSVGPlugin` for logo strokes, proof connectors, scan rails, route lines, and inspection brackets.
+- `DrawSVGPlugin` for logo strokes, anchored proof connectors, scan rails, route-node signals, and inspection brackets.
 - `MorphSVGPlugin` when one idea visibly becomes another.
 - `MotionPathPlugin` when an object carries attention along a rail or path.
 - `CustomEase` for one named signature motion moment.
@@ -299,6 +350,7 @@ Produce a compact proposal and stop for user confirmation. Wait to generate imag
 The proposal must include:
 
 - Essence: core viewpoint, largest conflict, emotional center, amplified keyword, visual metaphor.
+- Product proof inventory when relevant: existing assets, product surfaces, commands, screenshots, output examples, numbers, modules, taxonomies, providers, checks, and gaps.
 - Structure: center symbol / huge title / person anchor / huge number.
 - Format: language, platform, aspect ratio, pixel size, duration, FPS, safe margins. Default to Simplified Chinese, vertical 9:16, and `1080x1920` unless overridden.
 - Image decision: whether generated bitmap images are needed, each asset role, image ratio, quiet text zone, forbidden content, and what must stay in HyperFrames.
@@ -306,6 +358,10 @@ The proposal must include:
 - Writing standard: terse, project-specific, no self-talk, no generic hype, no repeated contrast-connector phrasing.
 - Visual object plan: primary object, functional marks, texture pieces, why each object is necessary, and excluded object types.
 - Support asset plan: whether the video needs symbol, texture, transition plate, semantic glyph, product/UI fragment, or motion accent assets; what stays code-generated; and what must be deleted if it becomes decoration.
+- Mandatory visual component library for product promos: command cards, output cards, stat blocks, chips, proof cards, anchored signals, route-node sequences, screenshots, icons, marks, panels, and CTA badges with semantic roles.
+- Connector / line decision: whether any route, rail, arc, underline, scan line, or path is needed; its anchors, job, safe zone, deletion test, and component-attached fallback.
+- Icon / decorative system: what icons, marks, fragments, glows, panels, borders, chips, or texture layers are required and what they prove.
+- Copy strategy: pain, mechanism, proof, confidence, CTA; rewrite any generic line that could fit a different product.
 - Typography: title/support/CTA scale, title size tier, line-height, letter-spacing, maximum lines, text spacing, overflow handling.
 - Layout: dominant visual mass, layout contract, grid/alignment, crop-safe zones, mobile overlay risks.
 - Motion: main reveal, background motion, support asset choreography, transition style, hold times, easing, audio hit plan, motion bounds, and what must remain still.
@@ -379,7 +435,10 @@ Create `DESIGN.md` from `templates/DESIGN.template.md`.
 
 The design system must specify typography, color, spacing, density, metaphor symbol, visual object system, background-image system, generated-image plan, text-over-image rules, and motion personality. This prevents downstream steps from improvising a new visual language.
 
+For product promos, the design system must also specify the product proof inventory, mandatory visual component library, icon/decorative system, asset library, copy ladder, and motion interaction rules. A one-background-plus-title design system is insufficient for a premium product promo unless the user explicitly asks for a minimal concept film.
+
 Read `references/visual-standard.md` before judging visual quality, typography, layout, or motion.
+Read `references/premium-product-promo.md` before product, tool, CLI, API, workflow, skill, template, or reference-driven promo work.
 Read `references/motion-background-system.md` before deciding image count, background roles, animation grammar, or text-over-image treatment.
 Read `references/text-over-background-layout.md` before deciding layout contracts, image ratios, text rectangles, subject rectangles, title tiers, crop-safe zones, or bottom-safe boundaries.
 Read `references/motion-craft.md` before deciding kinetic typography, CSS/SVG layers, scene transitions, GSAP structure, or anti-PPT quality gates.
@@ -424,6 +483,9 @@ Every beat needs:
 - Audio or rhythm notes when relevant.
 - Quality note.
 - Metaphor role: what part of the abstract idea this frame carries.
+- Product proof role when relevant: what product-specific artifact, component, number, screenshot, output, command, chip, icon, or mark makes the claim believable.
+- Component interaction when relevant: what state change the component performs, such as typing, routing, fanning, assembling, checking, locking, publishing, saving, or exporting.
+- Connector anchoring when relevant: what exact objects any line, rail, path, underline, or arc connects, and what component-attached signal replaces it if the connector floats.
 
 Read `references/audio-sync.md` when music, sound design, voiceover, beat hits, or captions matter.
 
@@ -457,6 +519,8 @@ node scripts/validate_design_engineering.mjs <project-dir>
 ### 6. Visual Asset Plan
 
 If the confirmed proposal calls for bitmap assets, generate or source them before HyperFrames implementation. For new videos, default to one background image stage plus a support-asset decision unless the brief explains a pure-code or supplied-asset approach.
+
+For product promos, do not stop at background images. Build an asset library that can include official assets, repository assets, screenshots, generated mockups, code-native cards, SVG icons, chip groups, panels, anchored signals, and output previews. Each asset must prove a product claim or support a motion interaction. A product promo with no visual component library is not ready for implementation.
 
 For each Codex Image Gen request:
 
@@ -496,6 +560,7 @@ For each scene, verify:
 - Hierarchy is clear.
 - The scene has one dominant idea.
 - The scene has one dominant visual mass and no unowned decoration.
+- Any connector, line, rail, arc, underline, or path has visible anchors and a semantic job; otherwise it is replaced by a component-attached signal.
 - CTA or brand lockup is not visually weak.
 - The metaphor is understandable without icon labels.
 - The frame obeys the house style: black, sparse, cinematic, white/gray/warm gold.
@@ -516,6 +581,7 @@ Before animating each scene, answer:
 - Where is the stillness after the reveal?
 - How does this motion change meaning rather than add noise?
 - Which CSS3/SVG device carries structure: mask, path, clip, scan line, frame, underline, perspective layer, or blend?
+- If using a line, path, rail, arc, or underline, what exact object anchors it, and why is it better than a card edge, node, status dot, progress strip, or CTA border?
 - How does the outgoing text become the next scene's bridge instead of disappearing into a generic fade?
 
 For GSAP in HyperFrames:
@@ -600,6 +666,11 @@ Before claiming the video is ready, verify:
 - Text fits safe margins, max lines, overflow rules, crop-safe areas, and platform overlay zones.
 - Text-over-background beats declare textRect, subjectRect, safeBottomY, title tier, quiet zone, and motion bounds.
 - Generated images have a role, target scene, quiet text zone, accepted local path, and usable crop before use.
+- Product promos include a product proof inventory, mandatory visual component library, icon/decorative system, asset library, copy ladder, and component interaction plan.
+- Product promo storyboards name at least four concrete visual components for a 15s premium product promo, or explicitly document why a concept-film exception is better.
+- Product promo copy is specific: pain, mechanism, proof, confidence, and CTA are not generic.
+- Product promo snapshots look like product proof frames, not only title cards.
+- Product promo connectors are anchored to visible product components or replaced by card-attached signals; no floating arcs or decorative lines remain.
 - Support asset decision is documented for new videos, even when the decision is none.
 - Support assets have role, source, style lock, safe zones, motion purpose, entrance/exit timing, and deletion trigger before they are generated or animated.
 - No support asset competes with the dominant text, symbol, product, or CTA.

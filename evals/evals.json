@@ -120,6 +120,40 @@
         "Output includes a kinetic relay score target of 100 and a no-final-delivery threshold below 90.",
         "Output asks for confirmation before implementation."
       ]
+    },
+    {
+      "id": 8,
+      "prompt": "请给一个 15 秒视频号产品宣传片 Phase 1 方案。产品叫 DraftPilot，是一个把会议纪要变成产品决策文档的 CLI。我要参考顶级黑金产品宣传片的质感：必须有图标、装饰元素、图片资源/截图、命令卡、证明卡和动效交互，不要只给大字和背景。",
+      "expected_output": "A Phase 1 brief/design proposal that treats this as a premium product promo. It must include product proof inventory, mandatory visual component library, icon/decorative system, asset library plan, copy ladder, component interactions, and a premium product promo score target before asking for confirmation.",
+      "files": [],
+      "assertions": [
+        "Output identifies this as a premium product promo or equivalent.",
+        "Output includes a product proof inventory with commands, output examples, numbers, screenshots or generated product-safe mockups.",
+        "Output requires a mandatory visual component library rather than only a background and big text.",
+        "Output names at least four concrete components such as command card, output card, proof card, stat block, anchored signal, route-node sequence, chip group, screenshot surface, or CTA badge.",
+        "Output includes an icon or mark system and explains what the icons/marks prove.",
+        "Output includes decorative elements as a named system rather than filler.",
+        "Output includes an asset library plan covering existing assets, generated assets, screenshots or code-native components.",
+        "Output maps each major component to a motion interaction or state change.",
+        "Output includes copy strategy using pain, mechanism, proof, confidence, and CTA.",
+        "Output blocks final delivery below a premium product promo score of 90 or equivalent."
+      ]
+    },
+    {
+      "id": 9,
+      "prompt": "这个 HyperFrames 视频里的线条和弧线路径位置有问题，真的必要吗？请按第一性原理复盘，优化成片，并把经验沉淀到当前 SKILL。",
+      "expected_output": "A targeted postmortem and edit workflow that treats lines, arcs, rails, underlines, and connector paths as support objects rather than automatic premium decoration. It should name anchors, semantic job, safe zone, deletion test, component-attached alternatives, update production artifacts or skill rules, then rerun snapshots/render validation.",
+      "files": [],
+      "assertions": [
+        "Output identifies lines, arcs, rails, underlines, or connector paths as support objects rather than default premium decoration.",
+        "Output requires visible start and end anchors when a connector is kept.",
+        "Output requires a semantic job such as workflow order, input-output transformation, state handoff, scan boundary, or CTA focus.",
+        "Output includes a deletion test asking whether the viewer still understands the beat without the connector.",
+        "Output prefers component-attached alternatives such as card-edge highlights, route nodes, status dots, progress strips, cursor highlights, screenshot checks, or CTA border lighting when a line floats.",
+        "Output removes or replaces free-floating decorative lines instead of merely repositioning them.",
+        "Output updates the relevant storyboard, design, review report, schema, or SKILL guidance when optimizing the production system.",
+        "Output reruns relevant snapshot, render, or validation checks before claiming completion."
+      ]
     }
   ]
 }

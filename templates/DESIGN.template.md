@@ -85,11 +85,37 @@
 - Texture pieces:
 - Object restraint:
 - Removal test:
+- Mandatory visual component library:
+- Command / API card:
+- Output / draft card:
+- Stat / proof block:
+- Module / provider chips:
+- Product frame / screenshot surface:
+- Anchored signal / route-node sequence:
+- Connector / line policy:
+- Connector allowed only when anchored to:
+- Component-attached signal fallback:
+- CTA badge / action pill:
+- Component count target:
+- Component rejection tests:
 - Title card:
 - Product frame:
 - Proof / stat moment:
 - Caption:
 - CTA / brand lockup:
+
+## Product Proof And Asset Library
+- Product proof inventory:
+- Existing repository assets:
+- Official / supplied assets:
+- Screenshots or rendered outputs:
+- Generated product-safe mockups:
+- Code-native SVG/CSS components:
+- Icon library:
+- Decorative element library:
+- What each asset proves:
+- Scene ownership per asset:
+- Assets that must be deleted if decorative:
 
 ## Support Asset System
 - Support asset decision: none / generated / supplied / code-generated / mixed
@@ -112,6 +138,7 @@
 - Direction vocabulary:
 - Relay / handoff rules:
 - Icon policy:
+- Connector policy:
 - Push / wipe / scan policy:
 - Type-on / cursor policy:
 - Transition midpoint frame rules:
@@ -140,9 +167,21 @@
 - SVG layers:
 - GSAP master timeline structure:
 - Scene transition bridges:
+- Anchored connector rules:
 - Readable lock moments:
 - Signature motion moment:
 - Motion devices to avoid:
+
+## Component Interaction System
+- Command card interaction:
+- Output card interaction:
+- Stat block interaction:
+- Chip group interaction:
+- Screenshot / theme stack interaction:
+- Proof card interaction:
+- CTA interaction:
+- Connector interaction:
+- State-change rule:
 
 ## Image Generation Plan
 - Key visual 1:
@@ -177,6 +216,7 @@
 ## Don't
 - Avoid ordinary illustration, ecommerce banner layout, icon piles, generic neon tech, multicolor palettes, and busy collage.
 - Avoid decoration that only fills empty space.
+- Avoid free-floating lines, arcs, rails, and underlines without visible anchors.
 - Avoid labels that explain the metaphor.
 - Do not generate a decorative asset sheet without named roles, safe zones, and motion purpose.
 

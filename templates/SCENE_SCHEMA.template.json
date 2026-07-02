@@ -67,9 +67,24 @@
         "style_lock": "Matches vector template palette, stroke width, contrast, and lighting direction.",
         "safe_zones": "Must stay outside textRect and below top platform UI unless acting as the title reveal mask.",
         "motion_purpose": "The accent path guides attention and becomes transition material.",
+        "anchoring_contract": "Connector must name visible start/end anchors or be replaced by a component-attached signal.",
         "entrance_exit_timing": "Enters after title mask reveal; exits or hands off before scene transition.",
         "deletion_trigger": "Delete if the path does not guide attention, bridge a transition, or strengthen the keyword."
       },
+      "visual_components": [
+        {
+          "component_id": "command_card",
+          "required_for_product_promo": true,
+          "role": "Concrete product surface or proof artifact.",
+          "source": "existing / generated / screenshot / code-generated",
+          "content_slots": ["command", "label", "highlight"],
+          "icon_or_mark": "cursor / prompt dot / route node / none",
+          "connector_anchor": "visible start/end anchors, or none if using card-edge signal / node / status dot",
+          "motion_interaction": "type, highlight, route, fan, assemble, check, lock, publish, save, or export.",
+          "safe_zones": "Component stays inside declared layout contract and outside platform overlays.",
+          "deletion_trigger": "Delete only if another component proves the same claim more clearly."
+        }
+      ],
       "primitive_chain": [
         {
           "primitive_id": "maskReveal",

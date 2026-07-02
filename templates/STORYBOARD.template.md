@@ -30,11 +30,15 @@
 - If lower-safe, what occupies center:
 - Hero frame timestamp:
 - Metaphor role:
+- Product proof role:
 - Background / main visual state:
 - Primary visual object:
 - Functional visual marks:
+- Connector / line anchor:
 - Support assets active:
 - Support asset motion purpose:
+- Visual components active:
+- Component interaction:
 - Object removal test:
 - Text-safe zone:
 - Layout contract:
@@ -44,6 +48,7 @@
 - Text transition: entry / lock / emphasis / exit / bridge
 - Text transition device: mask / scan / split / compression / assembly / handoff / deliberate stillness
 - Kinetic relay: old word exit / new word entry / action object / direction / relay handoff
+- Connector fallback if the line floats:
 - Directional transition: left push / right push / up push / down press / wipe / scan / type-on / compression / expansion / hard cut
 - Transition midpoint frame:
 - Kinetic relay score note:
@@ -68,11 +73,15 @@
 - If lower-safe, what occupies center:
 - Hero frame timestamp:
 - Metaphor role:
+- Product proof role:
 - Background / main visual state:
 - Primary visual object:
 - Functional visual marks:
+- Connector / line anchor:
 - Support assets active:
 - Support asset motion purpose:
+- Visual components active:
+- Component interaction:
 - Object removal test:
 - Text-safe zone:
 - Layout contract:
@@ -82,6 +91,7 @@
 - Text transition: entry / lock / emphasis / exit / bridge
 - Text transition device: mask / scan / split / compression / assembly / handoff / deliberate stillness
 - Kinetic relay: old word exit / new word entry / action object / direction / relay handoff
+- Connector fallback if the line floats:
 - Directional transition: left push / right push / up push / down press / wipe / scan / type-on / compression / expansion / hard cut
 - Transition midpoint frame:
 - Kinetic relay score note:
@@ -106,11 +116,15 @@
 - If lower-safe, what occupies center:
 - Hero frame timestamp:
 - Metaphor role:
+- Product proof role:
 - Background / main visual state:
 - Primary visual object:
 - Functional visual marks:
+- Connector / line anchor:
 - Support assets active:
 - Support asset motion purpose:
+- Visual components active:
+- Component interaction:
 - Object removal test:
 - Text-safe zone:
 - Layout contract:
@@ -120,6 +134,7 @@
 - Text transition: entry / lock / emphasis / exit / bridge
 - Text transition device: mask / scan / split / compression / assembly / handoff / deliberate stillness
 - Kinetic relay: old word exit / new word entry / action object / direction / relay handoff
+- Connector fallback if the line floats:
 - Directional transition: left push / right push / up push / down press / wipe / scan / type-on / compression / expansion / hard cut
 - Transition midpoint frame:
 - Kinetic relay score note:
@@ -144,11 +159,15 @@
 - If lower-safe, what occupies center:
 - Hero frame timestamp:
 - Metaphor role:
+- Product proof role:
 - Background / main visual state:
 - Primary visual object:
 - Functional visual marks:
+- Connector / line anchor:
 - Support assets active:
 - Support asset motion purpose:
+- Visual components active:
+- Component interaction:
 - Object removal test:
 - Text-safe zone:
 - Layout contract:
@@ -158,6 +177,7 @@
 - Text transition: entry / lock / emphasis / exit / bridge
 - Text transition device: mask / scan / split / compression / assembly / handoff / deliberate stillness
 - Kinetic relay: old word exit / new word entry / action object / direction / relay handoff
+- Connector fallback if the line floats:
 - Directional transition: left push / right push / up push / down press / wipe / scan / type-on / compression / expansion / hard cut
 - Transition midpoint frame:
 - Kinetic relay score note:
@@ -177,6 +197,12 @@
 - Generated texture / atmosphere:
 - Primary visual object system:
 - Functional mark types:
+- Mandatory visual component library:
+- Component roles / source / local paths:
+- Icon library:
+- Decorative element library:
+- Product proof inventory:
+- Product proof gaps:
 - Support asset plan:
 - Support asset roles / source / local paths:
 - Support asset style lock:
@@ -187,6 +213,8 @@
 - Kinetic relay action object chain:
 - Direction map:
 - Relay continuity rules:
+- Connector anchoring rules:
+- Component-attached signal fallbacks:
 - Kinetic relay score target:
 - Background stage:
 - Layout contracts:

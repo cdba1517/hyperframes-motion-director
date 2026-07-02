@@ -27,6 +27,11 @@
 | transition midpoints |  |  |
 | layout overflow |  |  |
 | visual object necessity |  |  |
+| product proof inventory |  |  |
+| mandatory visual component library |  |  |
+| icon / decorative system |  |  |
+| connector / line anchoring |  |  |
+| copy specificity |  |  |
 | kinetic typography |  |  |
 | SVG / CSS3 motion structure |  |  |
 | anti-PPT verdict |  |  |
@@ -80,6 +85,25 @@ Use this section for text/icon transition promos.
 - If below 100, what must improve:
 - If below 90, why final delivery is blocked:
 
+## Premium Product Promo Score
+
+Use this section for product, CLI, SaaS, API, workflow, skill, template, or reference-driven promos. Below 90 blocks final delivery unless the brief explicitly chose a minimal concept film.
+
+| Category | Score | Notes |
+| --- | ---: | --- |
+| Concrete product proof artifacts / 20 |  |  |
+| Coherent visual component library / 20 |  |  |
+| Icon and decorative system supports meaning / 15 |  |  |
+| Copy is specific and high-retention / 15 |  |  |
+| Motion interactions show state change / 15 |  |  |
+| Visual hierarchy and mobile safe zones / 10 |  |  |
+| CTA feels like the end of the product path / 5 |  |  |
+| Total / 100 |  |  |
+
+- Score verdict:
+- If below 100, what must improve:
+- If below 90, why final delivery is blocked:
+
 ## Style Gate
 - Default language is Simplified Chinese or override is documented:
 - Default 9:16 1080x1920 vertical format or override is documented:
@@ -88,6 +112,14 @@ Use this section for text/icon transition promos.
 - Surface-topic illustration avoided:
 - Background image or pure-code exception is verified:
 - Background role supports meaning rather than decoration:
+- Product proof inventory is documented when relevant:
+- Mandatory visual component library exists for product promos:
+- Visual components are reusable and product-specific:
+- Icon library or mark system exists when the scene needs product taxonomy/proof:
+- Decorative elements form a named system instead of filler:
+- Connectors, route lines, arcs, rails, and underlines have visible anchors:
+- Free-floating connectors were replaced with component-attached signals:
+- Copy follows pain / mechanism / proof / confidence / CTA:
 - Primary visual object is necessary and memorable:
 - Functional marks replace explanation instead of decorating:
 - Texture pieces stay sparse and metaphor-specific:
@@ -114,6 +146,7 @@ Use this section for text/icon transition promos.
 - Transition midpoint frames are inspectable:
 - Fade is support only when kinetic relay mode is active:
 - CSS3 / SVG layers carry structure rather than decoration:
+- Lines, paths, and rails carry structure rather than decoration:
 - GSAP timeline uses labels and meaningful scene bridges:
 - Video would lose meaning if reduced to screenshots:
 - Important text settles before it must be read:
@@ -133,7 +166,11 @@ Use this section for text/icon transition promos.
 - Adjacent kinetic beats have a visible or logical relay object:
 - Motion uses CSS3 / SVG / GSAP structure or documents a deliberate stillness exception:
 - Visual object system has one primary object and no more than three mark types:
+- Product promos do not rely only on one background image plus big text:
+- Product promo storyboards name at least four concrete visual components for a 15s premium promo:
+- Product promo snapshots look like product proof frames, not only title cards:
 - Added objects are not generic decoration:
+- No floating arcs, unanchored route lines, or decorative underlines remain:
 - Reducing the video to screenshots would remove meaningful motion information:
 - Anti-PPT verdict: pass / revise before delivery
 

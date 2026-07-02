@@ -9,6 +9,7 @@ const requiredFiles = [
   "SKILL.md",
   "references/workflow.md",
   "references/visual-standard.md",
+  "references/premium-product-promo.md",
   "references/motion-background-system.md",
   "references/motion-craft.md",
   "references/design-engineering.md",
@@ -43,6 +44,10 @@ const requiredSkillTerms = [
   "Background And Motion Rule",
   "Text Over Background Layout Rule",
   "Kinetic Text Relay Rule",
+  "Premium Product Promo Rule",
+  "Anchored Connector Rule",
+  "mandatory visual component library",
+  "premium-product-promo.md",
   "Design Engineering Contract Rule",
   "GSAP Choreography Contract Rule",
   "Motion Design Compiler",
@@ -61,7 +66,7 @@ const positioningChecks = [
   },
   {
     file: "SKILL.md",
-    required: ["name: hyperframes-motion-director", "# HyperFrames Motion Director", "Text Over Background Layout Rule", "text-over-background-layout.md"],
+    required: ["name: hyperframes-motion-director", "# HyperFrames Motion Director", "Text Over Background Layout Rule", "text-over-background-layout.md", "Premium Product Promo Rule", "premium-product-promo.md", "Anchored Connector Rule"],
     forbidden: ["name: video-ad-director", "# Video Ad Director", "AI video ad or promo", "HyperFrames advertising work"],
   },
   {

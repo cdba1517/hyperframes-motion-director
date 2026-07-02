@@ -11,12 +11,62 @@
   },
   "templates": [
     {
+      "id": "command_card",
+      "purpose": "Terminal, API, or workflow command as a concrete product surface.",
+      "slots": {
+        "command": { "required": true, "max_lines": 1, "max_chars": 54 },
+        "highlight": { "required": false, "max_chars": 14 },
+        "label": { "required": false, "max_chars": 16 }
+      },
+      "layout": {
+        "default_intent": "product proof card",
+        "text_axis": "center axis",
+        "textRect": { "x": 120, "y": 700, "w": 840, "h": 210 },
+        "subjectRect": { "x": 110, "y": 640, "w": 860, "h": 260 },
+        "safeBottomY": 1632,
+        "title_tier": "compact",
+        "vertical_center_tolerance_px": 24
+      },
+      "svg_parts": [".command-window", ".prompt-dots", ".cursor", ".command-highlight"],
+      "allowed_primitives": ["maskReveal", "staggerText", "pathDraw", "clipWipe"],
+      "rejection_tests": [
+        "command_text_too_small",
+        "command_card_is_generic_filler",
+        "command_does_not_route_to_output"
+      ]
+    },
+    {
+      "id": "proof_card",
+      "purpose": "A row or card that combines one mark, one product claim, and one proof note.",
+      "slots": {
+        "mark": { "required": true, "allowed_roles": ["write", "polish", "image", "check", "export"] },
+        "title": { "required": true, "max_lines": 1, "max_chinese_chars": 12 },
+        "support": { "required": true, "max_lines": 1, "max_chinese_chars": 24 }
+      },
+      "layout": {
+        "default_intent": "product proof list",
+        "text_axis": "left axis",
+        "textRect": { "x": 160, "y": 620, "w": 760, "h": 470 },
+        "subjectRect": { "x": 132, "y": 590, "w": 816, "h": 540 },
+        "safeBottomY": 1632,
+        "title_tier": "compact",
+        "vertical_center_tolerance_px": 24
+      },
+      "svg_parts": [".proof-card", ".proof-mark", ".proof-border"],
+      "allowed_primitives": ["staggerText", "maskReveal", "pathDraw"],
+      "rejection_tests": [
+        "proof_card_has_no_product_specific_claim",
+        "mark_is_unrelated_decoration",
+        "support_text_is_too_dense"
+      ]
+    },
+    {
       "id": "quote_card",
       "purpose": "Huge claim, quote, or hook where text is the main image.",
       "slots": {
         "title": { "required": true, "max_lines": 2, "max_chinese_chars": 14 },
         "support": { "required": false, "max_lines": 1, "max_chinese_chars": 20 },
-        "accent_path": { "required": true, "role": "underline / scan rail / transition bridge" },
+        "accent_path": { "required": true, "role": "anchored underline / scan rail / transition bridge" },
         "icon": { "required": false, "allowed_roles": ["seal", "cursor", "scan-mark"] }
       },
       "layout": {
@@ -34,6 +84,7 @@
         "title_more_than_two_lines",
         "title_outside_textRect",
         "accent_path_not_connected_to_keyword",
+        "accent_path_floats_without_anchor",
         "all_motion_is_opacity_y"
       ]
     },
@@ -71,7 +122,7 @@
         "left_title": { "required": true, "max_lines": 2, "max_chinese_chars": 10 },
         "right_title": { "required": true, "max_lines": 2, "max_chinese_chars": 10 },
         "bridge_label": { "required": false, "max_lines": 1, "max_chinese_chars": 8 },
-        "accent_path": { "required": true, "role": "shared rail / divider / handoff" }
+        "accent_path": { "required": true, "role": "anchored shared rail / divider / handoff" }
       },
       "layout": {
         "default_intent": "split product / claim",
@@ -88,16 +139,31 @@
       "rejection_tests": [
         "left_right_text_not_aligned",
         "divider_path_is_decorative_only",
+        "divider_path_has_no_visible_anchors",
         "transition_midpoint_blank",
         "same_side_repeats_without_handoff"
       ]
     }
   ],
   "icon_and_decoration_rules": {
-    "max_functional_mark_types": 3,
-    "allowed_roles": ["scan-rail", "seal", "proof-tick", "cursor", "frame-corner", "route-node"],
+    "max_functional_mark_types": 6,
+    "mandatory_for_product_promos": true,
+    "allowed_roles": ["scan-rail", "seal", "proof-tick", "cursor", "frame-corner", "route-node", "prompt-dot", "module-chip", "provider-chip", "draft-stamp", "upload-arrow", "save-mark"],
     "forbidden_roles": ["random sparkle", "generic rocket", "per-line icon", "decorative badge cluster"],
     "removal_test": "Deleting the mark must reduce comprehension, attention direction, proof, or memory."
+  },
+  "visual_component_policy": {
+    "mandatory_for_product_promos": true,
+    "minimum_components_for_15s_premium_promo": 4,
+    "allowed_components": ["command_card", "output_card", "proof_card", "stat_block", "module_chip_group", "provider_chip_group", "theme_stack", "anchored_signal", "route_node_sequence", "product_frame", "cta_badge"],
+    "required_contract_fields": ["role", "source", "content_slots", "motion_interaction", "safe_zones", "deletion_trigger"],
+    "rejection_tests": [
+      "product_promo_has_only_background_and_title",
+      "component_has_no_product_proof_role",
+      "component_motion_is_only_fade_or_y",
+      "route_line_floats_without_component_anchors",
+      "component_library_uses_inconsistent_visual_language"
+    ]
   },
   "support_asset_policy": {
     "allowed_decisions": ["none", "generated", "supplied", "code-generated", "mixed"],

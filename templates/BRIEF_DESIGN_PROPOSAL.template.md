@@ -18,6 +18,17 @@
 - Selected structure: center symbol / huge title / person anchor / huge number
 - Why this structure:
 
+## Product Proof Inventory
+- Product promo mode: yes / no
+- Existing assets to inspect:
+- Product surfaces:
+- Commands / API calls / workflow syntax:
+- Screenshots / outputs / examples:
+- Numbers / modules / themes / providers:
+- Trust evidence:
+- Missing assets:
+- If fewer than 3 proof artifacts, why this is still viable:
+
 ## Format
 - Language: Simplified Chinese promotional copy by default
 - Platform: vertical social video by default
@@ -83,12 +94,44 @@
 - Support asset motion purpose:
 - Support asset deletion trigger:
 
+## Mandatory Visual Component Library
+- Component library required: yes / no
+- Component 1:
+- Component 1 role / proof:
+- Component 1 motion interaction:
+- Component 2:
+- Component 2 role / proof:
+- Component 2 motion interaction:
+- Component 3:
+- Component 3 role / proof:
+- Component 3 motion interaction:
+- Component 4:
+- Component 4 role / proof:
+- Component 4 motion interaction:
+- Icon / mark system:
+- Decorative system:
+- Connector / line decision:
+- Connector anchors and job:
+- Component-attached fallback:
+- Component rejection tests:
+- If no component library, why this is a deliberate concept-film exception:
+
+## Copy Strategy
+- Pain line:
+- Mechanism line:
+- Proof line:
+- Confidence line:
+- CTA line:
+- Generic-copy rewrite rule:
+
 ## Kinetic Text Relay Plan
 - Use kinetic relay mode: yes / no
 - Keyword chain:
 - Action object chain:
 - Direction map:
 - Relay object / handoff logic:
+- Connector / line anchor test:
+- If a free-floating line appears, why it is better than a card edge, node, status dot, progress strip, or CTA border:
 - Push / wipe / scan vocabulary:
 - Readable hold plan:
 - Transition midpoint snapshots:

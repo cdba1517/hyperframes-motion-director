@@ -24,6 +24,9 @@ Use these prompts later for trigger and non-trigger evaluation of the skill desc
 18. "The hook has no impact because all the text sits in the lower third. Rework the HyperFrames storyboard with center-impact typography and real text transitions."
 19. "我想要黑底大字、图标介入、左右推出、上下推出、扫描、打字、淡出的炫酷文字动效宣传片，先给 HyperFrames Phase 1 方案。"
 20. "Use this reference GIF as visual direction: sparse black field, huge typography, icons and small objects pushing words into the next beat. Build a HyperFrames kinetic text promo plan."
+21. "这个产品宣传片不够高级，缺少图标库、装饰元素、图片资源库和动画交互。参考顶级黑金产品片，复盘并优化 HyperFrames skill。"
+22. "Make a premium product promo in HyperFrames. It must include a visual component library, proof cards, command cards, chips, screenshots, decorative marks, and a real CTA path."
+23. "视频中的线条和弧线路径位置有问题，真的必要吗？按第一性原理复盘 HyperFrames 宣传片，并优化 SKILL 规则。"
 
 ## Should Not Trigger
 
