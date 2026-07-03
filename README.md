@@ -4,10 +4,10 @@
 
 **An Agent Skill for planning, producing, and reviewing HyperFrames motion videos.**
 
-<img src="assets/banner.png" alt="HyperFrames Motion Director" width="100%">
+<img src="skills/hyperframes-motion-director/assets/banner.png" alt="HyperFrames Motion Director" width="100%">
 
 [![License: AGPL-3.0](https://img.shields.io/badge/License-AGPL--3.0-blue.svg)](./LICENSE)
-[![Agent Skill](https://img.shields.io/badge/Agent%20Skill-HyperFrames-c96442.svg)](./SKILL.md)
+[![Agent Skill](https://img.shields.io/badge/Agent%20Skill-HyperFrames-c96442.svg)](./skills/hyperframes-motion-director/SKILL.md)
 [![Node.js](https://img.shields.io/badge/Node.js-18%2B-141413.svg)](https://nodejs.org/)
 
 </div>
@@ -45,13 +45,13 @@ Start with the brief/design proposal and wait for confirmation.
 Create a motion-video production scaffold from this repository:
 
 ```bash
-node scripts/create_project.mjs ./my-motion-film
+node skills/hyperframes-motion-director/scripts/create_project.mjs ./my-motion-film
 ```
 
 Create a project with timing and motion maps:
 
 ```bash
-node scripts/create_project.mjs ./my-motion-film --with-timing --with-motion
+node skills/hyperframes-motion-director/scripts/create_project.mjs ./my-motion-film --with-timing --with-motion
 ```
 
 ## Outputs
@@ -82,7 +82,7 @@ MOTION_MAP.json           GSAP choreography and transition map
 
 ## What It Enforces
 
-<img src="assets/features.png" alt="Background, typography, and motion layers" width="100%">
+<img src="skills/hyperframes-motion-director/assets/features.png" alt="Background, typography, and motion layers" width="100%">
 
 - A confirmed brief before implementation.
 - Chinese vertical-video defaults, with documented overrides for other platforms.
@@ -99,16 +99,16 @@ MOTION_MAP.json           GSAP choreography and transition map
 Check the skill package:
 
 ```bash
-node scripts/check-structure.mjs
+node skills/hyperframes-motion-director/scripts/check-structure.mjs
 ```
 
 Check a generated project:
 
 ```bash
-node scripts/check_assets.mjs <project-dir>
-node scripts/check_assets.mjs <project-dir> --strict
-node scripts/validate_artifacts.mjs <project-dir>
-node scripts/validate_design_engineering.mjs <project-dir>
+node skills/hyperframes-motion-director/scripts/check_assets.mjs <project-dir>
+node skills/hyperframes-motion-director/scripts/check_assets.mjs <project-dir> --strict
+node skills/hyperframes-motion-director/scripts/validate_artifacts.mjs <project-dir>
+node skills/hyperframes-motion-director/scripts/validate_design_engineering.mjs <project-dir>
 ```
 
 For implemented HyperFrames compositions, also run the strongest checks supported by the local HyperFrames CLI, such as validate, inspect, snapshot, and render.
@@ -116,12 +116,12 @@ For implemented HyperFrames compositions, also run the strongest checks supporte
 ## Repository Structure
 
 ```text
-SKILL.md             Main Agent Skill instructions
-templates/           Brief, design, storyboard, review, schema, vector, motion maps
-references/          Workflow, visual standards, design engineering, GSAP choreography, layout, audio sync, stability
-scripts/             Project scaffold and validation helpers
-evals/               Trigger prompts and evaluation cases
-assets/              README visual assets
+skills/hyperframes-motion-director/SKILL.md      Main Agent Skill instructions
+skills/hyperframes-motion-director/templates/    Brief, design, storyboard, review, schema, vector, motion maps
+skills/hyperframes-motion-director/references/   Workflow, visual standards, design engineering, GSAP choreography, layout, audio sync, stability
+skills/hyperframes-motion-director/scripts/      Project scaffold and validation helpers
+skills/hyperframes-motion-director/evals/        Trigger prompts and evaluation cases
+skills/hyperframes-motion-director/assets/       Skill and README visual assets
 ```
 
 ## Author

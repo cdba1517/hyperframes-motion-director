@@ -2,34 +2,34 @@
 
 ## Project Structure & Module Organization
 
-This repository is an agent skill for directing HyperFrames cinematic motion-video production work.
+This repository packages an agent skill for directing HyperFrames cinematic motion-video production work.
 
-- `SKILL.md` contains the primary agent instructions and quality gates.
-- `templates/` holds production artifact templates such as `BRIEF_DESIGN_PROPOSAL.template.md`, `DESIGN.template.md`, `STORYBOARD.template.md`, `REVIEW_REPORT.template.md`, design-engineering contracts, and optional `BEAT_MAP` / `MOTION_MAP` templates.
-- `references/` contains supporting guidance for workflow, the unified visual standard, GSAP choreography, audio sync, and render stability.
-- `scripts/` contains Node.js helpers for scaffolding projects and validating skill structure or production artifacts.
-- `evals/` stores trigger prompts and evaluation cases.
+- `skills/hyperframes-motion-director/SKILL.md` contains the primary agent instructions and quality gates.
+- `skills/hyperframes-motion-director/templates/` holds production artifact templates such as `BRIEF_DESIGN_PROPOSAL.template.md`, `DESIGN.template.md`, `STORYBOARD.template.md`, `REVIEW_REPORT.template.md`, design-engineering contracts, and optional `BEAT_MAP` / `MOTION_MAP` templates.
+- `skills/hyperframes-motion-director/references/` contains supporting guidance for workflow, the unified visual standard, GSAP choreography, audio sync, and render stability.
+- `skills/hyperframes-motion-director/scripts/` contains Node.js helpers for scaffolding projects and validating skill structure or production artifacts.
+- `skills/hyperframes-motion-director/evals/` stores trigger prompts and evaluation cases.
 
 ## Build, Test, and Development Commands
 
 Use Node.js 18 or newer.
 
 ```bash
-node scripts/check-structure.mjs
+node skills/hyperframes-motion-director/scripts/check-structure.mjs
 ```
 
 Verifies the skill has all required files and key `SKILL.md` terms.
 
 ```bash
-node scripts/create_project.mjs ./my-motion-film
+node skills/hyperframes-motion-director/scripts/create_project.mjs ./my-motion-film
 ```
 
 Creates a HyperFrames motion production scaffold with the core artifacts, design-engineering contracts, asset folders, review folders, and placeholders. Use `--with-timing` for `BEAT_MAP.json` and `--with-motion` for `MOTION_MAP.json`.
 
 ```bash
-node scripts/check_assets.mjs <project-dir>
-node scripts/validate_artifacts.mjs <project-dir>
-node scripts/validate_design_engineering.mjs <project-dir>
+node skills/hyperframes-motion-director/scripts/check_assets.mjs <project-dir>
+node skills/hyperframes-motion-director/scripts/validate_artifacts.mjs <project-dir>
+node skills/hyperframes-motion-director/scripts/validate_design_engineering.mjs <project-dir>
 ```
 
 Checks a generated project for asset readiness, artifact completeness, scene schema validity, approved vector templates, approved motion primitives, GSAP choreography policy, semantic primitive selection reasons, and snapshot tests. These scripts do not prove visual or directing quality.
@@ -44,7 +44,7 @@ Scripts use modern JavaScript modules (`import` syntax) and `.mjs` filenames. Ke
 
 ## Testing Guidelines
 
-There is no formal test framework yet. Treat `node scripts/check-structure.mjs` as the release gate for this skill. When changing project-scaffold behavior, run `create_project.mjs` into a temporary directory and then run asset, artifact, and design-engineering checks against that directory.
+There is no formal test framework yet. Treat `node skills/hyperframes-motion-director/scripts/check-structure.mjs` as the release gate for this skill. When changing project-scaffold behavior, run `create_project.mjs` into a temporary directory and then run asset, artifact, and design-engineering checks against that directory.
 
 ## Commit & Pull Request Guidelines
 
@@ -52,4 +52,4 @@ The current history uses Conventional Commit style, for example `docs: initializ
 
 ## Agent-Specific Instructions
 
-Do not start animation code before reading `SKILL.md` and the relevant files in `references/`. For new video work, preserve the two-phase gate: `BRIEF_DESIGN_PROPOSAL.md` first, user confirmation second, then production through `DESIGN.md`, `STORYBOARD.md`, `SCENE_SCHEMA.json`, `VECTOR_TEMPLATES.json`, `MOTION_PRIMITIVES.json`, optional generated images, validation, snapshots, render, and `REVIEW_REPORT.md`. `BEAT_MAP.json` and `MOTION_MAP.json` are optional only when timing or choreography complexity justifies them.
+Do not start animation code before reading `skills/hyperframes-motion-director/SKILL.md` and the relevant files in `skills/hyperframes-motion-director/references/`. For new video work, preserve the two-phase gate: `BRIEF_DESIGN_PROPOSAL.md` first, user confirmation second, then production through `DESIGN.md`, `STORYBOARD.md`, `SCENE_SCHEMA.json`, `VECTOR_TEMPLATES.json`, `MOTION_PRIMITIVES.json`, optional generated images, validation, snapshots, render, and `REVIEW_REPORT.md`. `BEAT_MAP.json` and `MOTION_MAP.json` are optional only when timing or choreography complexity justifies them.

@@ -1,9 +1,12 @@
 #!/usr/bin/env node
 
 import { existsSync, readFileSync } from "node:fs";
-import { join } from "node:path";
+import { dirname, join, resolve } from "node:path";
+import { fileURLToPath } from "node:url";
 
-const root = process.cwd();
+const scriptDir = dirname(fileURLToPath(import.meta.url));
+const root = resolve(scriptDir, "..");
+const repoRoot = resolve(root, "../..");
 
 const requiredFiles = [
   "SKILL.md",
@@ -31,6 +34,8 @@ const requiredFiles = [
   "scripts/validate_artifacts.mjs",
   "scripts/validate_design_engineering.mjs",
   "scripts/build_review_pack.mjs",
+  "assets/banner.png",
+  "assets/features.png",
   "evals/evals.json",
   "evals/trigger-prompts.md",
 ];
@@ -60,31 +65,37 @@ const requiredSkillTerms = [
 
 const positioningChecks = [
   {
+    base: repoRoot,
     file: "README.md",
     required: ["# HyperFrames Motion Director"],
     forbidden: ["# Video Ad Director", "面向 HyperFrames 视频广告", "Video Ad Director 是一个用于制作"],
   },
   {
+    base: root,
     file: "SKILL.md",
     required: ["name: hyperframes-motion-director", "# HyperFrames Motion Director", "Text Over Background Layout Rule", "text-over-background-layout.md", "Premium Product Promo Rule", "premium-product-promo.md", "Anchored Connector Rule"],
     forbidden: ["name: video-ad-director", "# Video Ad Director", "AI video ad or promo", "HyperFrames advertising work"],
   },
   {
+    base: repoRoot,
     file: "AGENTS.md",
     required: ["HyperFrames cinematic motion-video production work"],
     forbidden: ["HyperFrames video advertising work", "HyperFrames ad production scaffold"],
   },
   {
+    base: root,
     file: "scripts/create_project.mjs",
     required: ["HyperFrames Motion Production", "HyperFrames Motion Director"],
     forbidden: ["HyperFrames Ad Production"],
   },
   {
+    base: root,
     file: "references/design-engineering.md",
     required: ["Motion Design Compiler", "scene schema", "motion primitives", "vector templates", "selection rules", "render validation"],
     forbidden: [],
   },
   {
+    base: root,
     file: "references/gsap-choreography.md",
     required: ["GSAP choreography", "timeline labels", "position parameters", "transform aliases", "autoAlpha", "plugin registration", "DrawSVG", "MorphSVG", "MotionPath", "SplitText", "performance"],
     forbidden: [],
@@ -101,7 +112,7 @@ const frontmatterErrors = [];
 const positioningErrors = [];
 
 for (const check of positioningChecks) {
-  const path = join(root, check.file);
+  const path = join(check.base, check.file);
   const text = existsSync(path) ? readFileSync(path, "utf8") : "";
   for (const term of check.required) {
     if (!text.includes(term)) positioningErrors.push(`${check.file} missing required positioning term: ${term}`);

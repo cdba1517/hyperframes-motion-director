@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file.
 
+## [2.5.2] - 2026-07-03
+
+### Fixed
+
+- Fixed `npx skills add geekjourneyx/hyperframes-motion-director` installation discovery by moving the installable skill package into `skills/hyperframes-motion-director/`.
+- Kept bundled `references/`, `templates/`, `scripts/`, and `assets/` inside the skill directory so agents can load the skill's supporting resources after installation.
+- Updated repository documentation and agent instructions to reference the nested skill path.
+- Made `scripts/check-structure.mjs` resolve the skill root from its own location, so validation works from the repository root or another working directory.
+
+### Validation
+
+- Ran `node skills/hyperframes-motion-director/scripts/check-structure.mjs`.
+- Generated a temporary project scaffold from the nested skill path.
+- Ran asset and design-engineering validation against the generated scaffold.
+
 ## [2.5.1] - 2026-07-01
 
 ### Fixed
