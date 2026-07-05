@@ -16,6 +16,23 @@ It comes from visible specificity:
 
 A weak cinematic promo often has one background image and several generic slogan beats. A strong product promo has a product proof ecosystem.
 
+## Source-Driven Visual System
+
+Asset volume does not create premium design. A video can have many icons, generated props, and cards while still feeling ordinary when those assets are not derived from the copy or product mechanism.
+
+Before choosing assets, translate the source material into a visual lexicon:
+
+- Source phrases: exact claims, lines, nouns, verbs, numbers, and tensions from the README, article, product page, script, or confirmed copy.
+- Concrete nouns/entities: commands, files, folders, drafts, reports, modules, screenshots, theme cards, metrics, providers, checks, surfaces, platforms, or states.
+- Process verbs/actions: write, route, convert, collect, inspect, publish, save, export, fan, assemble, lock, recover, grow, or hand off.
+- Core motif: one visual metaphor that can repeat without becoming wallpaper.
+- Component families: three to five reusable families such as command surfaces, output papers, taxonomy chips, validation marks, metric tiles, or route nodes.
+- Text-to-component map: each major component names the source phrase it visualizes.
+- Big-text-box replacement: paragraphs become objects, proof surfaces, chips, kinetic keywords, diagrams, or short captions.
+- Generic rejection list: office props, AI chips, dashboards, paper piles, desk scenes, generic cards, or golden icons that could fit another project.
+
+Use this recognition test: if the still frames could advertise a different product after changing only labels, the visual system is generic. Redesign the motif, component families, or source phrase mapping before implementation.
+
 ## Reference Teardown Pattern
 
 When learning from a reference video, extract:
@@ -112,13 +129,14 @@ Allowed sheet contents:
 Sheet requirements:
 
 - Every item has a named role and target scene.
+- Every item maps to a source phrase, noun, verb, number, or product state.
 - Items share one visual language, palette, lighting, border radius, shadow, and material system.
 - Items have enough spacing or transparent background for auto-crop/manual crop.
 - No baked-in final screen text unless that text is the component itself.
 - Accepted items are cropped into local files or isolated as SVG/CSS pieces before implementation.
 - The storyboard records crop boxes, local paths, motion action, and deletion test.
 
-Reject a component sheet when it is a decorative sticker pack, contains random icons, mixes styles, lacks crop-safe spacing, or includes components that cannot be assigned to a scene and motion action.
+Reject a component sheet when it is a decorative sticker pack, contains random icons, mixes styles, lacks crop-safe spacing, looks like generic office/productivity material, or includes components that cannot be assigned to a source phrase, scene, and motion action.
 
 Premium components should feel built, not drawn flat:
 
@@ -254,6 +272,9 @@ Block final delivery when any of these are true:
 - Components are generic duplicate cards with changed labels and no different product role.
 - Components are static placements with no state-change action.
 - A generated component sheet is used as a decorative collage instead of cropped, named, scene-owned components.
+- Components or generated assets are visually rich but not source-specific; they could fit a different product after relabeling.
+- Hero frames are dominated by large text boxes while visual components only decorate the margins.
+- The visual system has no source phrase mapping, visual lexicon, motif family, or generic rejection list.
 - The storyboard cannot name at least four concrete visual components for a 15s product promo.
 - The asset library has no official, existing, generated, screenshot, or code-native asset decision.
 - Copy is generic and could fit a different product.

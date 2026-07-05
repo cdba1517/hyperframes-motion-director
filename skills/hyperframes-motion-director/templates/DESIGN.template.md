@@ -17,6 +17,19 @@
 - What must stay implicit:
 - Excluded visual content:
 
+## Source-Driven Visual System
+- Source phrases:
+- Concrete nouns / entities:
+- Process verbs / actions:
+- Emotional tension:
+- Numbers / modules / metrics:
+- Core visual motif:
+- Component families:
+- Text-to-component map:
+- Big text box replacement rule:
+- Generic visual rejection list:
+- Source recognition test:
+
 ## Colors
 - Background: `#050505` deep black.
 - Foreground: white / light gray.
@@ -91,7 +104,10 @@
 - Removal test:
 - Mandatory visual component library:
 - Product visual component floor:
+- Source phrase required per component:
 - Component sheet source / crop plan:
+- Component sheet source phrases:
+- Component sheet style system:
 - Component state-change rule:
 - Command / API card:
 - Output / draft card:
@@ -106,6 +122,7 @@
 - Component count target:
 - Component rejection tests:
 - Static-component rejection tests:
+- Big-text-box rejection tests:
 - Title card:
 - Product frame:
 - Proof / stat moment:

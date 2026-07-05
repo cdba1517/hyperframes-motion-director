@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file.
 
+## [2.6.2] - 2026-07-05
+
+### Added
+
+- Added a source-driven visual system rule so product, article, workflow, and knowledge promos must extract source phrases, nouns, verbs, numbers, motif families, text-to-component maps, big-text-box replacement plans, and generic visual rejection lists before implementation.
+- Added brief, design, storyboard, and review fields that force every major visual component and generated component sheet item to map back to source text or product mechanism.
+- Added review gates for source-text recognition, big text box replacement, motif cohesion, and rejecting generic office/AI/productivity visuals that could fit another project.
+
+### Changed
+
+- Strengthened artifact validation so future productions fail when visual richness is only an attractive asset pack without source-specific component mapping.
+
 ## [2.6.1] - 2026-07-05
 
 ### Added

@@ -51,6 +51,7 @@ const requiredSkillTerms = [
   "Text Over Background Layout Rule",
   "Kinetic Text Relay Rule",
   "Premium Product Promo Rule",
+  "Source-Driven Visual System Rule",
   "Minimum product visual component floor",
   "Anchored Connector Rule",
   "First-Frame Visual Center Gate",
@@ -76,7 +77,7 @@ const positioningChecks = [
   {
     base: root,
     file: "SKILL.md",
-    required: ["name: hyperframes-motion-director", "# HyperFrames Motion Director", "Text Over Background Layout Rule", "text-over-background-layout.md", "Premium Product Promo Rule", "premium-product-promo.md", "Anchored Connector Rule"],
+    required: ["name: hyperframes-motion-director", "# HyperFrames Motion Director", "Text Over Background Layout Rule", "text-over-background-layout.md", "Premium Product Promo Rule", "Source-Driven Visual System Rule", "premium-product-promo.md", "Anchored Connector Rule"],
     forbidden: ["name: video-ad-director", "# Video Ad Director", "AI video ad or promo", "HyperFrames advertising work"],
   },
   {

@@ -30,6 +30,10 @@
 - If lower-safe, what occupies center:
 - Hero frame timestamp:
 - Metaphor role:
+- Source phrase:
+- Visual translation:
+- Component family:
+- Big text box replacement:
 - Product proof role:
 - Background / main visual state:
 - Primary visual object:
@@ -73,6 +77,10 @@
 - If lower-safe, what occupies center:
 - Hero frame timestamp:
 - Metaphor role:
+- Source phrase:
+- Visual translation:
+- Component family:
+- Big text box replacement:
 - Product proof role:
 - Background / main visual state:
 - Primary visual object:
@@ -116,6 +124,10 @@
 - If lower-safe, what occupies center:
 - Hero frame timestamp:
 - Metaphor role:
+- Source phrase:
+- Visual translation:
+- Component family:
+- Big text box replacement:
 - Product proof role:
 - Background / main visual state:
 - Primary visual object:
@@ -159,6 +171,10 @@
 - If lower-safe, what occupies center:
 - Hero frame timestamp:
 - Metaphor role:
+- Source phrase:
+- Visual translation:
+- Component family:
+- Big text box replacement:
 - Product proof role:
 - Background / main visual state:
 - Primary visual object:
@@ -193,6 +209,10 @@
 - Visual asset floor verdict:
 - Pure-code exception approved by user: yes / no / not applicable
 - Why snapshots will not reduce to black background plus title/cards:
+- Source phrases visualized:
+- Text-to-component map:
+- Big text boxes replaced by:
+- Generic visual assets rejected:
 - Generated image 1:
 - Generated image 1 role / size / layout contract / local path:
 - Generated image 2:
@@ -202,9 +222,11 @@
 - Functional mark types:
 - Mandatory visual component library:
 - Component roles / source / local paths:
+- Component source phrase mapping:
 - Component state-change actions:
 - Component snapshot timestamps:
 - Component sheet source / crop boxes / accepted local paths:
+- Component sheet style system:
 - Static components rejected:
 - Icon library:
 - Decorative element library:

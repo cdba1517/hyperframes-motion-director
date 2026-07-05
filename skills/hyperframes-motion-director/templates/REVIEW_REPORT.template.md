@@ -33,6 +33,10 @@
 | transition midpoints |  |  |
 | layout overflow |  |  |
 | visual object necessity |  |  |
+| source-driven visual system |  |  |
+| text-to-component mapping |  |  |
+| big text box replacement |  |  |
+| generic visual rejection |  |  |
 | product proof inventory |  |  |
 | mandatory visual component library |  |  |
 | product visual component floor |  |  |
@@ -102,7 +106,8 @@ Use this section for product, CLI, SaaS, API, workflow, skill, template, or refe
 | --- | ---: | --- |
 | Concrete product proof artifacts / 20 |  |  |
 | Coherent visual component library / 20 |  |  |
-| Icon and decorative system supports meaning / 15 |  |  |
+| Source-derived visual system / 15 |  |  |
+| Icon and decorative system supports meaning / 10 |  |  |
 | Copy is specific and high-retention / 15 |  |  |
 | Motion interactions show state change / 15 |  |  |
 | Visual hierarchy and mobile safe zones / 10 |  |  |
@@ -125,6 +130,12 @@ Use this section for product, CLI, SaaS, API, workflow, skill, template, or refe
 - Empty `assets/images` is blocked unless pure-code exception is explicitly approved:
 - Snapshots show more than black background plus title/cards:
 - Background role supports meaning rather than decoration:
+- Source phrases are translated into visuals:
+- Visual assets are derived from source nouns, verbs, numbers, or claims:
+- Text-to-component map is documented:
+- Big text boxes were replaced by objects, chips, proof surfaces, kinetic words, or short captions:
+- Generic office / AI / productivity / dashboard props were rejected unless source-specific:
+- Visual component families share one motif and style system:
 - Product proof inventory is documented when relevant:
 - Mandatory visual component library exists for product promos:
 - Product visual component floor is met:
@@ -191,6 +202,9 @@ Use this section for product, CLI, SaaS, API, workflow, skill, template, or refe
 - Visual object system has one primary object and no more than three mark types:
 - Product promos do not rely only on one background image plus big text:
 - Product promo storyboards name at least four concrete visual components for a 15s premium promo:
+- Product promo visuals are source-specific and not an attractive generic asset pack:
+- Hero frames would reveal the source topic without reading paragraph boxes:
+- Component sheets map every accepted item to a source phrase and component family:
 - Product promo components are visible, product-specific, and action-bearing:
 - Product promo component sheets are not decorative collages:
 - Product promo snapshots look like product proof frames, not only title cards:

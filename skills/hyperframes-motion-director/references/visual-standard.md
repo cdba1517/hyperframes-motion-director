@@ -26,6 +26,21 @@ Extract the underlying idea before choosing imagery:
 
 The metaphor must be legible without labels. If the viewer needs explanatory icon labels to understand the frame, the frame is too literal or too noisy.
 
+## Source Text To Visuals
+
+Do not design from an asset pack first. Design from the source text, product mechanism, and proof claims first.
+
+Before implementation, write a visual lexicon:
+
+- Exact source phrases that deserve visual treatment.
+- Nouns/entities that can become objects, surfaces, chips, cards, marks, or stages.
+- Verbs/actions that can become motion, state changes, routes, stamps, locks, reveals, or handoffs.
+- Numbers/modules/metrics that can become proof moments.
+- One motif and three to five component families that repeat across scenes.
+- A rejection list for attractive but generic visuals.
+
+Large text can be a hook, but large text boxes cannot be the default substitute for visual design. Replace paragraphs with product surfaces, object systems, kinetic keywords, proof fragments, chips, or diagrams. If a still frame cannot reveal what source material inspired it without reading a paragraph, the frame is visually generic.
+
 ## Visual Objects
 
 Visual objects replace words, direct the eye, or make the process believable.
@@ -145,6 +160,9 @@ Reject the work if:
 - Text overlaps, clips, shrinks unpredictably, or falls outside safe margins.
 - The work defaults to 16:9, English copy, or desktop-style density without a user or platform reason.
 - It is only background plus text when the concept needs a product, process, proof, or memory object.
+- It uses generic office, AI, productivity, dashboard, paper, or desk assets that are not mapped to source phrases, nouns, verbs, numbers, or product states.
+- It has many visual components but no shared motif, component family system, or source-text mapping.
+- Large paragraph cards or oversized text boxes carry beats that should have been converted into objects or proof surfaces.
 - It claims a visual asset system while `assets/images` has only placeholders, or every beat uses the same dark stage with text and translucent cards.
 - Added visual objects are generic decoration, not part of the story.
 - The first readable frame appears too late.

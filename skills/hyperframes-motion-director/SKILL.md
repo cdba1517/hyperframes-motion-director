@@ -88,6 +88,34 @@ Default product promo asset target for a 10-18s vertical film:
 
 If the brief cannot name at least three product-specific proof artifacts and four reusable visual components, do not hide behind an abstract metaphor. Inspect the project, use existing assets, generate product-safe mockups, capture screenshots, or state that the result will be a concept film rather than a premium product promo.
 
+## Source-Driven Visual System Rule
+
+Visual richness is not the same as visual quality. More assets, icons, cards, or generated props still fail when they are generic, mismatched to the copy, or interchangeable with another project.
+
+Before proposing visual components, extract a source-driven visual system from the user's text, project, article, README, product surface, or confirmed copy:
+
+- Source phrases: the exact lines, claims, nouns, verbs, numbers, and emotional tensions that deserve visual form.
+- Concrete nouns/entities: product surfaces, files, folders, commands, screenshots, documents, people, modules, metrics, platforms, or states.
+- Process verbs: write, route, collect, check, publish, save, export, compare, collapse, recover, grow, hand off, or equivalent action language.
+- Visual motif: one core metaphor and three to five component families that can repeat across scenes.
+- Text-to-component map: every major visual component names the source phrase it translates.
+- Big-text-box replacement plan: long text blocks become objects, chips, diagrams, proof surfaces, kinetic words, or short captions.
+- Generic rejection list: props and icons that could fit any unrelated product are forbidden unless the text makes them literal.
+
+Do not count a big text box, paragraph card, or generic office prop as a premium visual component. A title can be the hero, but it cannot be the whole visual system unless the user explicitly asked for a typography-only film.
+
+For article-to-video and knowledge/workflow promos, the source text is the asset brief. If a visual element cannot point back to a source phrase, claim, noun, verb, or number, remove it or redesign it. If still frames cannot reveal what the source material was about without reading a paragraph, the visual system is too generic.
+
+Generated component sheets must be source-driven. Each accepted item needs a source phrase, component family, crop/isolation plan, target scene, motion action, and deletion test. Reject sheets that are only attractive icon sets, generic stationery, random UI cards, or mixed-style decorations.
+
+Block delivery when:
+
+- Most hero frames are dominated by large text boxes with weak product or source-specific visual translation.
+- Visual assets are ordinary office, desk, paper, dashboard, AI, or productivity imagery that could serve a different video.
+- The component library is rich in quantity but lacks one coherent motif, style lock, and source phrase mapping.
+- Components repeat as same-shaped cards with different labels instead of distinct roles and actions.
+- The review report passes "asset floor" while failing source-text recognition, motif cohesion, or big-text replacement.
+
 ## Background And Motion Rule
 
 For new video work, plan background imagery by default. Phase 1 defines what is needed; Phase 2 generates or sources the assets after confirmation. Use Codex Image Gen for project-bound bitmap assets unless the user supplied strong assets or the confirmed direction is pure kinetic typography.
@@ -384,6 +412,7 @@ The proposal must include:
 
 - Essence: core viewpoint, largest conflict, emotional center, amplified keyword, visual metaphor.
 - Product proof inventory when relevant: existing assets, product surfaces, commands, screenshots, output examples, numbers, modules, taxonomies, providers, checks, and gaps.
+- Source-driven visual system: source phrases, concrete nouns, process verbs, motif families, text-to-component map, big-text-box replacement plan, and generic visual rejection list.
 - Structure: center symbol / huge title / person anchor / huge number.
 - Format: language, platform, aspect ratio, pixel size, duration, FPS, safe margins. Default to Simplified Chinese, vertical 9:16, and `1080x1920` unless overridden.
 - Image decision: whether generated bitmap images are needed, each asset role, image ratio, quiet text zone, forbidden content, and what must stay in HyperFrames.
@@ -470,7 +499,7 @@ Create `DESIGN.md` from `templates/DESIGN.template.md`.
 
 The design system must specify typography, color, spacing, density, metaphor symbol, visual object system, background-image system, generated-image plan, text-over-image rules, and motion personality. This prevents downstream steps from improvising a new visual language.
 
-For product promos, the design system must also specify the product proof inventory, mandatory visual component library, icon/decorative system, asset library, copy ladder, and motion interaction rules. A one-background-plus-title design system is insufficient for a premium product promo unless the user explicitly asks for a minimal concept film.
+For product promos, the design system must also specify the product proof inventory, source-driven visual system, mandatory visual component library, icon/decorative system, asset library, copy ladder, and motion interaction rules. A one-background-plus-title design system is insufficient for a premium product promo unless the user explicitly asks for a minimal concept film.
 
 Read `references/visual-standard.md` before judging visual quality, typography, layout, or motion.
 Read `references/premium-product-promo.md` before product, tool, CLI, API, workflow, skill, template, or reference-driven promo work.
@@ -519,6 +548,7 @@ Every beat needs:
 - Quality note.
 - Metaphor role: what part of the abstract idea this frame carries.
 - Product proof role when relevant: what product-specific artifact, component, number, screenshot, output, command, chip, icon, or mark makes the claim believable.
+- Source phrase and visual translation when relevant: which exact source phrase the beat converts into a component, motion, symbol, or proof surface.
 - Component interaction when relevant: what state change the component performs, such as typing, routing, fanning, assembling, checking, locking, publishing, saving, or exporting.
 - Connector anchoring when relevant: what exact objects any line, rail, path, underline, or arc connects, and what component-attached signal replaces it if the connector floats.
 
@@ -706,7 +736,9 @@ Before claiming the video is ready, verify:
 - Text-over-background beats declare textRect, subjectRect, safeBottomY, title tier, quiet zone, and motion bounds.
 - Generated images have a role, target scene, quiet text zone, accepted local path, and usable crop before use.
 - Product promos include a product proof inventory, mandatory visual component library, icon/decorative system, asset library, copy ladder, and component interaction plan.
+- Product, article, workflow, and knowledge promos include a source-driven visual system: source phrases, nouns, process verbs, motif families, text-to-component mapping, big-text-box replacement, and generic visual rejection.
 - Product promos meet the visual component floor: 4+ product-specific component types, 2+ visible in the first half, one concrete product surface, one taxonomy component, one final action component, and snapshot proof for each major component.
+- Hero frames prove source-text recognition. A viewer should see source-specific objects, actions, numbers, or product states, not only generic office props, large text boxes, or attractive asset packs.
 - Product promo storyboards name at least four concrete visual components for a 15s premium product promo, or explicitly document why a concept-film exception is better.
 - Product promo copy is specific: pain, mechanism, proof, confidence, and CTA are not generic.
 - Product promo snapshots look like product proof frames, not only title cards.
