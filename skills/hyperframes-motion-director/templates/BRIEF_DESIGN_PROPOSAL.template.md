@@ -100,24 +100,34 @@
 
 ## Mandatory Visual Component Library
 - Component library required: yes / no
+- Component floor for product promo: 4+ product-specific types / 2+ visible before midpoint / one concrete product surface / one taxonomy component / one final action component
+- Generated visual component sheet needed: yes / no
+- Component sheet contents:
+- Component sheet crop / isolation plan:
+- Component sheet local paths after crop:
 - Component 1:
 - Component 1 role / proof:
 - Component 1 motion interaction:
+- Component 1 state-change action:
 - Component 2:
 - Component 2 role / proof:
 - Component 2 motion interaction:
+- Component 2 state-change action:
 - Component 3:
 - Component 3 role / proof:
 - Component 3 motion interaction:
+- Component 3 state-change action:
 - Component 4:
 - Component 4 role / proof:
 - Component 4 motion interaction:
+- Component 4 state-change action:
 - Icon / mark system:
 - Decorative system:
 - Connector / line decision:
 - Connector anchors and job:
 - Component-attached fallback:
 - Component rejection tests:
+- Static-component rejection rule:
 - If no component library, why this is a deliberate concept-film exception:
 
 ## Copy Strategy

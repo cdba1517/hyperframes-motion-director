@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file.
 
+## [2.6.1] - 2026-07-05
+
+### Added
+
+- Made visible product visual components mandatory for product promos, with a component floor covering product surfaces, taxonomy components, final action components, snapshot proof, and state-change actions.
+- Added support for generated visual component sheets: multi-component asset sheets must have named roles, crop/isolation plans, local paths, target scenes, motion actions, and deletion tests.
+- Added brief, design, storyboard, and review fields for component state-change actions, component sheet crop plans, component snapshot timestamps, and static-component rejection.
+
+### Changed
+
+- Strengthened product promo validation so component plans must be visible, product-specific, action-bearing, and not just prose, generic cards, or decorative collages.
+
 ## [2.6.0] - 2026-07-05
 
 ### Added

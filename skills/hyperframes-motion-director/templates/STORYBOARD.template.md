@@ -202,6 +202,10 @@
 - Functional mark types:
 - Mandatory visual component library:
 - Component roles / source / local paths:
+- Component state-change actions:
+- Component snapshot timestamps:
+- Component sheet source / crop boxes / accepted local paths:
+- Static components rejected:
 - Icon library:
 - Decorative element library:
 - Product proof inventory:

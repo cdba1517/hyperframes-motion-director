@@ -35,6 +35,9 @@
 | visual object necessity |  |  |
 | product proof inventory |  |  |
 | mandatory visual component library |  |  |
+| product visual component floor |  |  |
+| component state-change actions |  |  |
+| component sheet crop / isolation |  |  |
 | icon / decorative system |  |  |
 | connector / line anchoring |  |  |
 | copy specificity |  |  |
@@ -124,7 +127,11 @@ Use this section for product, CLI, SaaS, API, workflow, skill, template, or refe
 - Background role supports meaning rather than decoration:
 - Product proof inventory is documented when relevant:
 - Mandatory visual component library exists for product promos:
+- Product visual component floor is met:
 - Visual components are reusable and product-specific:
+- Each major product component performs a state-change action:
+- Generated component sheets were cropped into named local assets before use:
+- Component snapshot timestamps prove visibility:
 - Icon library or mark system exists when the scene needs product taxonomy/proof:
 - Decorative elements form a named system instead of filler:
 - Connectors, route lines, arcs, rails, and underlines have visible anchors:
@@ -184,6 +191,8 @@ Use this section for product, CLI, SaaS, API, workflow, skill, template, or refe
 - Visual object system has one primary object and no more than three mark types:
 - Product promos do not rely only on one background image plus big text:
 - Product promo storyboards name at least four concrete visual components for a 15s premium promo:
+- Product promo components are visible, product-specific, and action-bearing:
+- Product promo component sheets are not decorative collages:
 - Product promo snapshots look like product proof frames, not only title cards:
 - Added objects are not generic decoration:
 - No floating arcs, unanchored route lines, or decorative underlines remain:

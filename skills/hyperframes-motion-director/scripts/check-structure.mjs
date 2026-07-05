@@ -51,6 +51,7 @@ const requiredSkillTerms = [
   "Text Over Background Layout Rule",
   "Kinetic Text Relay Rule",
   "Premium Product Promo Rule",
+  "Minimum product visual component floor",
   "Anchored Connector Rule",
   "First-Frame Visual Center Gate",
   "mandatory visual component library",

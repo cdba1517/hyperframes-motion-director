@@ -53,6 +53,8 @@ For product, tool, CLI, SaaS, API, skill, template, workflow, or system promos, 
 
 Visual components are mandatory for premium product promos. Do not proceed to implementation with only a background image, big titles, scan lines, and one symbol. That produces a single-note film. A premium promo needs a reusable component library that makes the product feel real.
 
+A product promo with no visual components is blocked. A "visual component" is a visible, reusable product-specific surface with content slots, style rules, state, motion interaction, and a snapshot proof. Generic text boxes, isolated labels, decorative borders, floating lines, background gradients, and unanchored icons do not count.
+
 The film must build a product proof ecosystem:
 
 - Product proof artifacts: commands, UI surfaces, output cards, screenshots, generated examples, module labels, theme stacks, provider chips, numbers, validations, reports, or before/after states.
@@ -60,6 +62,19 @@ The film must build a product proof ecosystem:
 - Icon and decorative system: marks, chips, rails, brackets, glows, fragments, panels, shadows, and texture must be named, reusable, and tied to meaning.
 - Motion interactions: each major component must reveal a product state change, not only enter the scene.
 - Copy ladder: pain -> mechanism -> proof -> confidence -> CTA. If a line could fit any product, rewrite it.
+
+Minimum product visual component floor:
+
+- 4+ product-specific component types for a 10-18s product promo, unless the user explicitly approves a minimal concept film.
+- 2+ component types visible in the first half of the film.
+- 1+ concrete product surface: real screenshot, faithful UI/product frame, command card, output card, template stack, document, report, or generated proof-safe mockup.
+- 1+ taxonomy component: module chips, provider chips, feature chips, theme chips, mode labels, or status marks.
+- 1+ final action component: CTA badge, install command, publish button, save/export pill, route endpoint, or action stamp.
+- Every product component defines role, source, content slots, visual state, motion interaction, snapshot timestamp, and deletion test.
+- Every visible product component must perform an action: type, route, fan, assemble, reveal, scan, validate, transform, count, lock, export, publish, save, collapse, or hand off. Static placement alone does not count.
+- A generated visual component sheet is allowed and often useful. It must contain multiple product-specific components with transparent or clean crop boundaries, consistent style, named roles, target scenes, crop boxes, motion purpose, and deletion tests. Auto-crop or manual crop each accepted component into local assets before implementation.
+
+Block product promo delivery when the component library is only prose, when components are not visible in snapshots, when all components are generic cards with different labels, when components merely sit on screen without action, or when motion does not show product state change.
 
 Use `references/premium-product-promo.md` before proposing, storyboarding, implementing, or reviewing a product promo, especially when the user provides a premium reference or complains about missing icon libraries, decorative elements, image resources, animation interaction, or top-tier design quality.
 
@@ -691,6 +706,7 @@ Before claiming the video is ready, verify:
 - Text-over-background beats declare textRect, subjectRect, safeBottomY, title tier, quiet zone, and motion bounds.
 - Generated images have a role, target scene, quiet text zone, accepted local path, and usable crop before use.
 - Product promos include a product proof inventory, mandatory visual component library, icon/decorative system, asset library, copy ladder, and component interaction plan.
+- Product promos meet the visual component floor: 4+ product-specific component types, 2+ visible in the first half, one concrete product surface, one taxonomy component, one final action component, and snapshot proof for each major component.
 - Product promo storyboards name at least four concrete visual components for a 15s premium product promo, or explicitly document why a concept-film exception is better.
 - Product promo copy is specific: pain, mechanism, proof, confidence, and CTA are not generic.
 - Product promo snapshots look like product proof frames, not only title cards.

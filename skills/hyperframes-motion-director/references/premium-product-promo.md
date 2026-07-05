@@ -58,6 +58,19 @@ If fewer than three product-specific artifacts can be named, the brief must eith
 
 A premium promo needs a small component library before implementation. Components must be reusable across scenes and bound to product meaning.
 
+No visible product component, no product promo. Treat the component library as a production dependency, not a nice-to-have. A component counts only when it is visible in snapshots and has product-specific content, state, and interaction. Generic cards, titles, labels, background glows, floating lines, and decorative icons are not enough.
+
+Minimum component floor for a 10-18 second product promo:
+
+- 4+ product-specific component types.
+- 2+ component types visible before the midpoint.
+- 1 concrete product surface: screenshot, UI frame, command card, output card, template stack, document, report, or generated proof-safe mockup.
+- 1 taxonomy component: module, provider, feature, mode, theme, status, or validation chips.
+- 1 final action component: CTA badge, install command, publish button, save/export pill, action stamp, or route endpoint.
+- Snapshot proof for each major component type.
+- Motion proof for every component type. A component that only sits in the frame does not count.
+- Optional generated component sheet: a single image containing multiple product-specific props, UI fragments, marks, cards, badges, chips, output tiles, or frames, designed for clean crop extraction and consistent style.
+
 Useful product promo components:
 
 - Command card: terminal, prompt, or API call with one highlighted action.
@@ -74,12 +87,38 @@ Useful product promo components:
 Each component must define:
 
 - Role in the story.
+- Source: official asset, screenshot, generated mockup, code-native component, or supplied material.
 - Visual style and constraints.
 - Data/content slots.
+- Visible state in the hero frame.
 - Entry motion.
 - Hold state.
 - Exit or handoff.
+- State-change action: type, route, fan, assemble, reveal, scan, validate, transform, count, lock, export, publish, save, collapse, or hand off.
+- Snapshot timestamp where the component is visible.
 - Rejection test.
+
+## Generated Visual Component Sheet
+
+A component sheet is useful when the video needs many related visual pieces without generating one image per object. Use it as source material, not as a finished frame.
+
+Allowed sheet contents:
+
+- Product surfaces: browser frame, app panel, command card, output card, report card, document, template preview, theme tile.
+- Taxonomy pieces: feature chips, module chips, provider chips, mode labels, status tags.
+- Action marks: cursor, route node, check stamp, publish stamp, export mark, save pill, progress strip, inspection corner.
+- Texture pieces: shadow plates, paper fragments, screen glow, rim-light strips, subtle material plates.
+
+Sheet requirements:
+
+- Every item has a named role and target scene.
+- Items share one visual language, palette, lighting, border radius, shadow, and material system.
+- Items have enough spacing or transparent background for auto-crop/manual crop.
+- No baked-in final screen text unless that text is the component itself.
+- Accepted items are cropped into local files or isolated as SVG/CSS pieces before implementation.
+- The storyboard records crop boxes, local paths, motion action, and deletion test.
+
+Reject a component sheet when it is a decorative sticker pack, contains random icons, mixes styles, lacks crop-safe spacing, or includes components that cannot be assigned to a scene and motion action.
 
 Premium components should feel built, not drawn flat:
 
@@ -209,6 +248,12 @@ If the component did not move, would the viewer still understand the product act
 Block final delivery when any of these are true:
 
 - The film uses only one abstract metaphor and no product-specific proof artifacts.
+- The product promo has no visible visual component library.
+- Fewer than four product-specific component types are defined and visible without an explicit concept-film exception.
+- The component list is only prose and cannot be found in snapshots or rendered frames.
+- Components are generic duplicate cards with changed labels and no different product role.
+- Components are static placements with no state-change action.
+- A generated component sheet is used as a decorative collage instead of cropped, named, scene-owned components.
 - The storyboard cannot name at least four concrete visual components for a 15s product promo.
 - The asset library has no official, existing, generated, screenshot, or code-native asset decision.
 - Copy is generic and could fit a different product.

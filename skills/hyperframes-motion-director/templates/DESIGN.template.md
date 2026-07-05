@@ -90,6 +90,9 @@
 - Object restraint:
 - Removal test:
 - Mandatory visual component library:
+- Product visual component floor:
+- Component sheet source / crop plan:
+- Component state-change rule:
 - Command / API card:
 - Output / draft card:
 - Stat / proof block:
@@ -102,6 +105,7 @@
 - CTA badge / action pill:
 - Component count target:
 - Component rejection tests:
+- Static-component rejection tests:
 - Title card:
 - Product frame:
 - Proof / stat moment:
