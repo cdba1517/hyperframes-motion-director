@@ -86,6 +86,24 @@ Treat each frame as four coordinated layers:
 
 Use `references/motion-background-system.md` for image counts, text-over-image layout, motion grammar, and review gates.
 
+## Pure-Code Exception Rule
+
+Pure-code black stages are an exception, not the default production shortcut. Do not mark a video premium or ready when it is only dark gradients, big text, translucent cards, and thin lines unless the user explicitly requested a typography-only motion study.
+
+For article-to-video, content-system, workflow, product, tutorial, personal knowledge-base, local-folder, or tool-comparison promos, Phase 1 and Phase 2 must include a visual asset floor:
+
+- At least one background stage, product screenshot, workspace/file-tree capture, generated metaphor plate, or supplied image with a documented role.
+- At least two scene-specific proof visuals beyond text boxes: folder/workspace crop, real or faithful UI surface, diagram object, process artifact, metric board, cover frame, or generated symbolic plate.
+- A local asset path for every bitmap or screenshot, or an explicit user-approved reason why a custom SVG/3D/vector system is stronger than bitmap assets.
+- A screenshot review that proves frames do not reduce to "black background + title + cards".
+
+Block final delivery when:
+
+- `assets/images` contains only placeholders and the report claims a rich background or visual asset system.
+- The same dark background stage carries every beat without a changing subject, scene depth, or concrete proof surface.
+- A pure-code exception is justified only by convenience, missing dependencies, or "code-generated" labels.
+- Motion is mostly text/card translate and opacity while the subject needs a visual environment, generated image, product screenshot, or artifact library.
+
 ## Image Gen Asset Discipline
 
 Codex Image Gen is used to create source material for compositing, not finished posters. HyperFrames owns final typography, timing, masks, crops, parallax, focus pulls, and text contrast.
@@ -389,6 +407,8 @@ Use `BEAT_MAP.json` when timing depends on music, voiceover, or exact hits. Use 
 
 For existing edits, read the project first, keep the current visual system unless the request requires a change, edit the smallest affected artifact, and rerun relevant validation.
 
+When user feedback exposes a visual defect after delivery, do not treat the fix as a one-off patch. Add the defect to `REVIEW_REPORT.md`, name the root cause, update the upstream contract or template that allowed it, rerun snapshots/render checks, and decide whether `SKILL.md`, templates, or validation scripts need a small rule update.
+
 ## Required Workflow
 
 ### 1. Intake
@@ -521,6 +541,8 @@ node scripts/validate_design_engineering.mjs <project-dir>
 If the confirmed proposal calls for bitmap assets, generate or source them before HyperFrames implementation. For new videos, default to one background image stage plus a support-asset decision unless the brief explains a pure-code or supplied-asset approach.
 
 For product promos, do not stop at background images. Build an asset library that can include official assets, repository assets, screenshots, generated mockups, code-native cards, SVG icons, chip groups, panels, anchored signals, and output previews. Each asset must prove a product claim or support a motion interaction. A product promo with no visual component library is not ready for implementation.
+
+For content-system, workflow, local-folder, knowledge-base, tutorial, or article-to-video promos, do not accept an empty image asset folder by default. Capture or generate at least one concrete visual stage and two proof visuals unless the user explicitly approves a typography-only film. Real local workflow material is usually stronger than abstract cards: file-tree crops, draft screenshots, gate reports, metric tables, workspace panels, product surfaces, or generated symbolic background plates.
 
 For each Codex Image Gen request:
 
@@ -663,6 +685,8 @@ Before claiming the video is ready, verify:
 - The implementation does not freely invent production SVG geometry when an approved template exists.
 - A requested build produced scaffold/composition source, not prose alone.
 - Static hero frames work before animation.
+- First-frame and hero-frame dominant visual masses are optically centered or intentionally offset, stay inside edge-safe bounds, and are checked in both browser snapshots and rendered MP4 stills.
+- The visual asset floor is met for non-typography videos: background or proof assets exist locally, screenshots/rendered frames show more than black background plus text/cards, and any pure-code exception is explicitly approved.
 - Text fits safe margins, max lines, overflow rules, crop-safe areas, and platform overlay zones.
 - Text-over-background beats declare textRect, subjectRect, safeBottomY, title tier, quiet zone, and motion bounds.
 - Generated images have a role, target scene, quiet text zone, accepted local path, and usable crop before use.
@@ -681,6 +705,17 @@ Before claiming the video is ready, verify:
 - The work avoids repeated fade-ups, identical centered layouts, empty black gaps, generic icon clutter, and interchangeable wallpaper.
 - Timing is deterministic; HyperFrames validation or the best available substitute has run.
 - Hero-frame snapshots and review outputs exist, or the blocker is reported.
+- Any user-reported visual defect is recorded with root cause, upstream artifact changed, rerun evidence, and whether the skill/template/validator needs a rule update.
+
+### First-Frame Visual Center Gate
+
+The first 0-2 seconds decide whether the video feels intentional. For every vertical promo, inspect the first readable hold and the first product-proof hold:
+
+- Name the dominant visual mass: title block, number, card stack, product surface, screenshot, symbol, CTA, or route object.
+- Check optical center, not only CSS center: the perceived group center should sit on the intended axis, or the storyboard must explain the offset.
+- Check edge clearance: no important card, screenshot, product edge, label, or CTA may be clipped unless the crop is an intentional transition.
+- Check actual rendered MP4 stills, not only browser snapshots, because render scale, transforms, and perspective can reveal crop errors.
+- If a hero element is intentionally off-center, record the counterweight that balances it: title, symbol, light, card, negative space, or motion direction.
 
 ## Hard Stability Rules
 

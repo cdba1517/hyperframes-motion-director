@@ -54,6 +54,10 @@
 ## Image Generation Decision
 - Generate images: yes / no
 - Default background stage: generated / supplied / pure-code exception
+- Visual asset floor: required / not required / typography-only user-approved exception
+- Local background / screenshot / generated proof assets planned:
+- Pure-code exception reason, if any:
+- Why pure-code is stronger than screenshots or generated plates, if claimed:
 - Background role: stage / symbol / texture / anchor / transition plate
 - Target scene / beat:
 - Layout strategy:

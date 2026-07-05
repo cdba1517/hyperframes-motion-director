@@ -190,6 +190,9 @@
 - Hold-frame verdict:
 
 ## Visual Asset Breakdown
+- Visual asset floor verdict:
+- Pure-code exception approved by user: yes / no / not applicable
+- Why snapshots will not reduce to black background plus title/cards:
 - Generated image 1:
 - Generated image 1 role / size / layout contract / local path:
 - Generated image 2:

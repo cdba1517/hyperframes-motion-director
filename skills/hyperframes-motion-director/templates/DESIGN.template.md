@@ -58,6 +58,10 @@
 
 ## Background Image System
 - Default background stage: generated / supplied / pure-code exception
+- Visual asset floor for this video:
+- Local background / screenshot / generated proof assets:
+- Empty `assets/images` allowed: yes / no, with user-approved reason
+- Pure-code exception reason, if any:
 - Background role:
 - Background source:
 - Local asset path:

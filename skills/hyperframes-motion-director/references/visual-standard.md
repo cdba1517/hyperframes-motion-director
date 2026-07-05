@@ -141,9 +141,11 @@ Reject the work if:
 - The background image is interchangeable wallpaper, fights the text, or needs a card to rescue readability.
 - It has more than one dominant message in a frame.
 - The first eye target is unclear or the main hook is unnecessarily pushed into the lower half.
+- The first-frame or hero-frame dominant visual mass is accidentally off-center, clipped, or balanced only by hidden/offscreen elements.
 - Text overlaps, clips, shrinks unpredictably, or falls outside safe margins.
 - The work defaults to 16:9, English copy, or desktop-style density without a user or platform reason.
 - It is only background plus text when the concept needs a product, process, proof, or memory object.
+- It claims a visual asset system while `assets/images` has only placeholders, or every beat uses the same dark stage with text and translucent cards.
 - Added visual objects are generic decoration, not part of the story.
 - The first readable frame appears too late.
 - The metaphor is surface-level or needs labels.

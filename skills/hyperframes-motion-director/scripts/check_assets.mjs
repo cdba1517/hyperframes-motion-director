@@ -6,6 +6,7 @@ import { join, resolve } from "node:path";
 const targetArg = process.argv[2] || ".";
 const root = resolve(process.cwd(), targetArg);
 const strict = process.argv.includes("--strict");
+const requireVisualAssets = process.argv.includes("--require-visual-assets");
 
 const textFiles = [
   "BRIEF_DESIGN_PROPOSAL.md",
@@ -59,6 +60,9 @@ const assetDirs = ["assets/audio", "assets/fonts", "assets/images", "assets/vide
 const emptyAssetDirs = assetDirs
   .filter((dir) => existsSync(join(root, dir)))
   .filter((dir) => readdirSync(join(root, dir)).filter((name) => name !== ".gitkeep").length === 0);
+const visualAssetFiles = existsSync(join(root, "assets/images"))
+  ? readdirSync(join(root, "assets/images")).filter((name) => /\.(png|jpe?g|webp|gif|svg)$/i.test(name))
+  : [];
 
 if (missing.length > 0) {
   console.error("Missing local asset references:");
@@ -76,6 +80,10 @@ if (emptyAssetDirs.length > 0) {
   for (const dir of emptyAssetDirs) console.warn(`- ${dir}`);
 }
 
-if (missing.length > 0 || (strict && remote.length > 0)) process.exit(1);
+if (requireVisualAssets && visualAssetFiles.length === 0) {
+  console.error("Required visual assets missing: assets/images has no image files.");
+}
+
+if (missing.length > 0 || (strict && remote.length > 0) || (requireVisualAssets && visualAssetFiles.length === 0)) process.exit(1);
 
 console.log("Asset check passed for required local references.");

@@ -2,6 +2,29 @@
 
 All notable changes to this project will be documented in this file.
 
+## [2.6.0] - 2026-07-05
+
+### Added
+
+- Added a first-frame visual center gate so hero cards, screenshots, CTA, and product surfaces must be optically centered or intentionally offset and checked in rendered MP4 stills.
+- Added a pure-code exception rule so black gradients, big text, translucent cards, and thin lines cannot masquerade as a premium visual system.
+- Added a visual asset floor for non-typography videos: background stages, screenshots, generated proof plates, or concrete workflow/product visuals must exist unless a typography-only exception is explicitly approved.
+- Added review, brief, design, and storyboard fields for visual asset floor, empty `assets/images` handling, pure-code exception approval, and "black background plus title/cards" regression checks.
+- Added `--require-visual-assets` to `scripts/check_assets.mjs` so productions that need visuals fail when `assets/images` contains only placeholders.
+
+### Changed
+
+- Strengthened artifact validation so the new visual asset and pure-code exception fields are required in production reports.
+- Updated visual standards to flag placeholder-only image folders and repeated dark-stage card scenes as quality failures.
+
+### Validation
+
+- Ran `node skills/hyperframes-motion-director/scripts/check-structure.mjs`.
+- Ran `node skills/hyperframes-motion-director/scripts/create_project.mjs /private/tmp/hf-skill-asset-floor-check --with-timing --with-motion`.
+- Ran `node skills/hyperframes-motion-director/scripts/validate_design_engineering.mjs /private/tmp/hf-skill-asset-floor-check`.
+- Confirmed the 2026-07-04 failed video copy is now blocked by `node skills/hyperframes-motion-director/scripts/check_assets.mjs /private/tmp/hf-failcheck-20260704 --require-visual-assets`.
+- Confirmed the 2026-07-04 failed video copy is now blocked by artifact validation for missing visual asset floor and pure-code exception fields.
+
 ## [2.5.2] - 2026-07-03
 
 ### Fixed

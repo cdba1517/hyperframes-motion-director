@@ -23,6 +23,12 @@
 | snapshot |  |  |
 | render |  |  |
 | first frame |  |  |
+| first-frame dominant visual mass |  |  |
+| hero-frame edge clearance |  |  |
+| rendered MP4 still spot-check |  |  |
+| visual asset floor |  |  |
+| empty image asset directory check |  |  |
+| pure-code exception approval |  |  |
 | first eye target |  |  |
 | transition midpoints |  |  |
 | layout overflow |  |  |
@@ -43,7 +49,7 @@
 | --- | --- | --- | --- |
 |  |  |  |  |
 
-Required snapshots: first frame, each hero frame, each transition midpoint, CTA frame, and any frame with dense text or product imagery.
+Required snapshots: first frame, first readable hold, each hero frame, each transition midpoint, CTA frame, and any frame with dense text or product imagery. After final render, extract at least one MP4 still from the first readable hold and confirm the dominant visual mass has the intended center or offset and no important edge is clipped.
 
 ## Watch Notes
 
@@ -111,6 +117,10 @@ Use this section for product, CLI, SaaS, API, workflow, skill, template, or refe
 - Essence metaphor is clear:
 - Surface-topic illustration avoided:
 - Background image or pure-code exception is verified:
+- Visual asset floor is met for non-typography videos:
+- Local background / screenshot / generated proof assets exist when needed:
+- Empty `assets/images` is blocked unless pure-code exception is explicitly approved:
+- Snapshots show more than black background plus title/cards:
 - Background role supports meaning rather than decoration:
 - Product proof inventory is documented when relevant:
 - Mandatory visual component library exists for product promos:
@@ -129,6 +139,9 @@ Use this section for product, CLI, SaaS, API, workflow, skill, template, or refe
 - Support assets have role, source, motion purpose, safe zones, and deletion triggers:
 - Unneeded support assets were omitted or removed:
 - Layout contract matches the image and message shape:
+- First-frame dominant visual mass is optically centered or intentionally offset:
+- Hero-frame product cards, screenshots, symbols, and CTA clear edge-safe bounds:
+- Rendered MP4 stills match the browser snapshot layout:
 - TextRect, subjectRect, and safeBottomY are verified:
 - Text sits in a safe quiet zone:
 - Mobile safe zones are respected:
@@ -157,6 +170,9 @@ Use this section for product, CLI, SaaS, API, workflow, skill, template, or refe
 
 ## No-Go Gates
 - Hook appears in the first attention zone by 0-2s, or the stronger center subject is justified:
+- First-frame or hero-frame dominant visual object is not accidentally off-center or clipped:
+- Non-typography videos do not ship with placeholder-only image assets:
+- Pure-code exception is user-approved and stronger than using screenshots or generated plates:
 - At least one hook or core-viewpoint frame uses center / upper-center text impact for short vertical promos:
 - Fewer than three beats repeat the same textRect, same entry, and same rhythm:
 - Important text uses at least one real transition device beyond opacity + y:
@@ -182,6 +198,14 @@ Use this section for product, CLI, SaaS, API, workflow, skill, template, or refe
 | Frame / beat | Snapshot issue | Upstream artifact updated | Contract / crop / prompt change |
 | --- | --- | --- | --- |
 |  |  |  |  |
+
+## User Feedback Regression Review
+
+Use this section when feedback after delivery identifies a real visual or motion defect.
+
+| User-reported issue | Root cause | Upstream rule or artifact updated | Rerun evidence | Skill/template/validator update needed |
+| --- | --- | --- | --- | --- |
+|  |  |  |  |  |
 
 ## Recommended Next Edit
 The smallest next edit that would improve the video most.

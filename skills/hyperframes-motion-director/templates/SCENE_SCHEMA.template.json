@@ -52,6 +52,9 @@
         "text_axis": "center axis",
         "textRect": { "x": 120, "y": 520, "w": 840, "h": 520 },
         "subjectRect": "none",
+        "dominant_visual_mass": "title block",
+        "optical_center_axis": "vertical center axis",
+        "edge_clearance_px": 72,
         "quiet_zone": "center 70% protected by black field or low-detail plate",
         "safeBottomY": 1632,
         "title_tier": "hero",
@@ -101,7 +104,7 @@
         {
           "id": "hook-hero",
           "at": 1.4,
-          "assertions": ["title_inside_textRect", "optical_center_passes", "accent_path_visible"]
+          "assertions": ["title_inside_textRect", "optical_center_passes", "dominant_visual_mass_inside_edge_safe_bounds", "accent_path_visible"]
         },
         {
           "id": "hook-transition-midpoint",
